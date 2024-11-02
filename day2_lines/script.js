@@ -69,18 +69,18 @@ function populateSpeciesDropdown(data) {
     });
 }
 
-// Function to populate the level dropdown
-function populateLevelDropdown(data) {
-    const levelSelect = document.getElementById('levelFilter');
-    const levels = [...new Set(data.features.map(f => f.properties.level))]; // Assuming there is a 'level' property
+// // Function to populate the level dropdown
+// function populateLevelDropdown(data) {
+//     const levelSelect = document.getElementById('levelFilter');
+//     const levels = [...new Set(data.features.map(f => f.properties.level))]; // Assuming there is a 'level' property
 
-    levels.forEach(level => {
-        const option = document.createElement('option');
-        option.value = level;
-        option.textContent = level;
-        levelSelect.appendChild(option);
-    });
-}
+//     levels.forEach(level => {
+//         const option = document.createElement('option');
+//         option.value = level;
+//         option.textContent = level;
+//         levelSelect.appendChild(option);
+//     });
+// }
 
 // Function to filter data by level based on iuu_pct ranges
 function filterDataByLevel(selectedLevel, data) {
@@ -117,8 +117,9 @@ levelRadios.forEach(radio => {
         const selectedLevel = this.value;
         const speciesSelect = document.getElementById('speciesSelect').value; // Get selected species
         const filteredDataByLevel = filterDataByLevel(selectedLevel, mergedData); // Use your existing merged data variable
-        const filteredDataBySpecies = filterDataBySpecies(speciesSelect, filteredDataByLevel); // You might want to filter by species too
-        updateMap(selectedSpecies, filteredDataBySpecies); // Update the map with the filtered data
+        //const filteredDataBySpecies = filterDataBySpecies(speciesSelect, filteredDataByLevel); // You might want to filter by species too
+        updateMap(selectedspecies,selectedLevel)
+        //updateMap(selectedSpecies, filteredDataBySpecies); // Update the map with the filtered data
 
     });
 });
@@ -154,7 +155,7 @@ Promise.all([
     addGeoJsonLayer(faoBounds, true);
     // Populate the dropdowns and add GeoJSON data to the map
     populateSpeciesDropdown(mergedData);
-    populateLevelDropdown(mergedData);
+    //populateLevelDropdown(mergedData);
     addGeoJsonLayer(mergedData);
 
     // Event listeners for dropdown changes
