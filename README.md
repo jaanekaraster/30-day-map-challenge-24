@@ -1,9 +1,5 @@
 # 30 Day Map Challenge 2024
-
-## The Challenge 
-# 30DayMapChallenge 2024
-
-Welcome to the 30DayMapChallenge! Each day in November, we'll explore a different theme for creating maps. From simple points to intricate projections, this challenge encourages experimentation and creativity in cartography.
+See the day folders for additional materials, like code, interactive maps and videos, related to the day's challenge. 
 
 ### Challenge Themes
 
@@ -39,7 +35,3 @@ Welcome to the 30DayMapChallenge! Each day in November, we'll explore a differen
 | 28   | 28-Nov-24  | **The blue planet**| Map oceans, rivers, and lakes, focusing on water bodies. 🌊🐋 |
 | 29   | 29-Nov-24  | **Overture**      | Use data from the Overture Maps Foundation to showcase new open geospatial datasets. 🌍📊 |
 | 30   | 30-Nov-24  | **The final map** | End the challenge with a map of your choice, showcasing your creativity and growth. 🎉🌐 |
-
-Each day presents a unique opportunity to explore different aspects of map-making. Whether you’re a beginner or an experienced cartographer, join us for 30 days of mapping inspiration and creativity! 
-
-Happy Mapping! 📍🗺️🌍
