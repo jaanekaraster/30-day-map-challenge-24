@@ -6,44 +6,7 @@
     <title>Interactive Marine Species Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* CSS for the map */
-        #map {
-            height: 100vh; /* Ensure full height of the viewport */
-            width: 100%;   /* Ensure full width of the viewport */
-            position: relative; /* Make sure it's positioned correctly */
-        }
 
-        /* CSS for the legend */
-        .legend {
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-            position: absolute;
-            bottom: 30px;
-            left: 10px;
-            z-index: 1000;
-        }
-
-        .legend h4 {
-            margin: 0 0 5px;
-            font-size: 14px;
-        }
-
-        .legend div {
-            display: flex;
-            align-items: center;
-            margin: 5px 0;
-        }
-
-        .legend div span {
-            display: inline-block;
-            width: 20px;
-            height: 10px;
-            margin-right: 5px;
-        }
-    </style>
 </head>
 <body>
     <div class="controls">
@@ -80,51 +43,34 @@
             <input type="radio" id="levelHigh" name="level" value="High">
             <label for="levelHigh">High (50% and above)</label><br>
         </div> -->
-    </div>
-    <div id="map"></div>
-
-    <!-- Legend for the map -->
-    <div class="legend">
-        <h4>IUU products as % of all imports</h4>
-        <div><span style="background: #35C4EB;"></span> Low (<20%) </div>
-        <div><span style="background: #A965A6;"></span> Moderate (20-50%)</div>
-        <div><span style="background: #DC194D;"></span> High (>50%)</div>
-        <div><span style="width: 20px; height: 10px; border: 2px solid rgb(75, 74, 74);"></span> FAO Major Fishing Area</div>
-        <div class="source-line">
-            Sources:
-        </div>
         <div>
+            <h4>IUU products as a % of all imports</h4>
+            <div><span style="background: #35C4EB;"></span> Low (<20%) </div>
+            <div><span style="background: #A965A6;"></span> Moderate (20-50%)</div>
+            <div><span style="background: #DC194D;"></span> High (>50%)</div>
+            <div><span style="width: 20px; height: 10px; border: 1px solid rgb(75, 74, 74);"></span> FAO Major Fishing Area</div>
+        </div>
+        <div class="source-line">
+            Sources
+        </div>
+        <div class="source-line p">
             <a href="https://www.usitc.gov/data/index.htm" target="_blank">US International Trade Commission Open Data</a>
         </div>    
-        <div>
+        <div class="source-line p">
             <p>
                 U.S. International Trade Commission (USITC). Seafood Obtained via Illegal, Unreported, and Unregulated Fishing: 
                 U.S. Imports and Economic Impact on U.S. Commercial Fisheries. USITC Publication 5168. Washington, DC: 
                 USITC, March 2021. <a href="https://usitc.gov/publications/332/pub5168.pdf" target="_blank">View Report</a>.
             </p>
         </div>
-        <div>
+        <div class="source-line p">
             <a href="https://www.fao.org/fishery/geonetwork/srv/eng/catalog.search#/metadata/ac02a460-da52-11dc-9d70-0017f293bd28" target="_blank">FAO Statistical Areas</a>
         </div>
-        
     </div>
+
+    <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
-    <script>
-        // Initialize the map without zoom controls
-        const map = L.map('map', {
-            zoomControl: false // Disable zoom controls
-        }).setView([20, 0], 2);
-
-        // Add OpenStreetMap tile layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-        }).addTo(map);
-
-        // Your existing JavaScript functions for adding GeoJSON, populating dropdown, etc.
-        // ...
-
-    </script>
 </body>
 </html>

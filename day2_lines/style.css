@@ -16,48 +16,68 @@ body {
     width: 30%; /* Set a fixed width */
 }
 
+.controls div span {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+/* CSS for the legend */
+.legend {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.legend h4 {
+    margin: 0 0 5px;
+    font-size: 14px;
+}
+
+.control div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
 #map {
     height: 100vh; /* Ensure full height of the viewport */
     width: 100%;   /* Ensure full width of the viewport */
     position: relative; /* Make sure it's positioned correctly */
 }
 
-.legend {
-    position: absolute; /* Position the legend absolutely */
-    bottom: 100px; /* Position it below the controls */
-    left: 10px; /* Position it from the left */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 10px; /* Add some padding */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for depth */
-    z-index: 1000; /* Ensure it’s above other elements */
-    width: 30%; /* Set a fixed width */
-    font-size: 14px; /* Set the font size */
-}
-
-.legend h4 {
-    margin: 0; /* Remove default margins */
-    font-size: 16px; /* Adjust header size */
-}
-
 .source-line {
+    font-weight: bold; /* Makes the text bold */
     margin-top: 10px;
     font-size: 14px; /* Adjusted font size for smaller text */
-    color: #555;     /* Grey color for source line */
+    margin-bottom: 5px;
+    color: #000000;     /* Grey color for source line */
 }
+
 .source-line div {
     margin-bottom: 0px; /* Space between entries */
 }
 
 .source-line p {
     margin: 0; /* Remove default margin */
-    font-size: 12px; /* Adjust font size if needed */
+    font-size: 14px; /* Adjust font size if needed */
+    font-weight: normal; /* Makes the text bold */
 }
 
 h1, h2, h3 {
     margin: 0;
     padding: 5px 0;
     font-size: 20px; /* Adjust header size */
+}
+
+h4 {
+    font-size: 16px;
 }
 
 ul {
