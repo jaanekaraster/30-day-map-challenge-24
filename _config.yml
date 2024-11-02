@@ -1,0 +1,5 @@
+title: "My 30-Day Map Challenge"
+description: "A daily map project for the 30-Day Map Challenge."
+#theme: jekyll-theme-minimal  # Or any other Jekyll theme name
+theme: jekyll-theme-cayman
+#jekyll-theme-slate
