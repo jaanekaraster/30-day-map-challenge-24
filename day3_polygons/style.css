@@ -148,7 +148,6 @@ html, body {
         flex: 0 0 60%; /* Takes 60% of the width */
         max-width: 60%; /* Optional: ensures it doesn't exceed this width */
         font-size: 10px; /* Set your desired font size here */
-
     }
 
     .cat-image {
