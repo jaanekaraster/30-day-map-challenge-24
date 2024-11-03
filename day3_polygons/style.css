@@ -1,0 +1,85 @@
+h1 {
+    margin: 20px 0;
+    font-size: 28px;
+    color: #333;
+    text-align:center;
+}
+
+h2 {
+    margin: 20px 20px;
+    font-size: 23px;
+    color: #333;
+    font-weight: bold; 
+    text-align:center;
+}
+
+h3 {
+    margin: 20px 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight:normal;
+    text-align:center;
+}
+
+h4 {
+    margin: 20px 20px;
+
+    font-size: 14px;
+    color: #333;
+    font-weight:normal;
+    text-align:left;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling on the entire page */
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex; /* Use flexbox for layout */
+    height: 100vh; /* Full viewport height */
+}
+
+.cat-corner{
+    font-size:30px;
+}
+
+#map {
+    width: 80%; /* Map takes up 80% of the width */
+    height: 100%; /* Full height */
+}
+
+#rightPanel {
+    flex: 0 0 30%;
+    overflow-y:auto;
+}
+
+#topRightPanel {
+    flex: 0 0 20%; /* Fixed height of 20% within the right panel */
+    padding: 10px;
+    overflow: hidden;
+}
+#resultsPanel {
+    flex: 1; /* Takes up remaining space in rightPanel */
+    overflow-y: auto; /* Enables vertical scrolling within this section */
+    padding: 10px;
+}
+
+.cat-entry {
+    flex: 0 0 80%; /* Results panel takes up 20% of the width */
+    margin-bottom: 10px; /* Spacing between cat entries */
+}
+
+.cat-image {
+    flex: 0 0 20%; /* Results panel takes up 20% of the width */
+    max-width: 50%; /* Make images responsive */
+    height: 50%; /* Maintain aspect ratio */
+}
+
+/* Emoji marker style */
+.emoji-marker {
+    font-size: 50px; /* Increase font size to make the emoji larger */
+    color: #ff6347; /* You can keep this color or adjust as needed */
+    text-align: center;
+}

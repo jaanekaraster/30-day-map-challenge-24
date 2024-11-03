@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cats from Kedikoy</title> <!-- Updated Title -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/d3@7"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div id="container">
+        <!-- Map Section -->
+        <div id="map"></div>
+
+        <!-- Right Panel Section -->
+        <div id="rightPanel">
+            <!-- Top Panel with Titles and Information -->
+            <div id="topRightPanel">
+                <h1>Kedi-koy</h1>
+                <h2>Search for the Hidden Cats of Istanbul</h2>
+                <h3>Walk the streets of Istanbul and you'll no doubt encounter a cat, or <i>kedi</i> in Turkish.</h3>
+                <h3>Move the 🐱<b>Cat Scanner</b>🐱 to discover where they are hiding.</h3>
+                <h4>
+                    Source: <a href="https://www.inaturalist.org/home" target="_blank">iNaturalist Data for Domestic Cat (Felis catus)</a>
+                </h4>
+                <h4>By @jaanekaraster for Day 3: Polygons, 30 Day Map Challenge 2024</h4>
+                <hr>
+                <h2 id="catsFoundTitle">0 cats found</h2>
+            </div>
+
+            <!-- Scrollable Results Panel -->
+            <div id="resultsPanel">
+                <div id="catsList"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
