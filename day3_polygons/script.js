@@ -1,5 +1,5 @@
 // Initialize the map
-const map = L.map('map', { zoomControl: false }).setView([40.99, 29.02], 15); // Set initial view to a central location with zoom level 15
+const map = L.map('map').setView([40.99, 29.02], 15); // Set initial view to a central location with zoom level 15
 
 // Add OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -113,8 +113,8 @@ function createCornerCat(latlng) {
 
 // Initialize corner emojis
 corners.nw = createCornerCat([40.993331, 29.020951]);
-corners.ne = createCornerCat([40.993331, 29.024290]);
-corners.se = createCornerCat([40.989992, 29.024290]);
+corners.ne = createCornerCat([40.993331, 29.0255]);
+corners.se = createCornerCat([40.989992, 29.0255]);
 corners.sw = createCornerCat([40.989992, 29.020951]);
 
 // Function to update the bounding box based on corner positions

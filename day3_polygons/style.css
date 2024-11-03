@@ -1,33 +1,33 @@
+/* Base styles */
 h1 {
-    margin: 20px 0;
-    font-size: 28px;
+    margin: 10px 0;
+    font-size: 24px;
     color: #333;
-    text-align:center;
+    text-align: center;
 }
 
 h2 {
-    margin: 20px 20px;
-    font-size: 23px;
+    margin: 5px 5px;
+    font-size: 20px;
     color: #333;
     font-weight: bold; 
-    text-align:center;
+    text-align: center;
 }
 
 h3 {
-    margin: 20px 20px;
-    font-size: 18px;
+    margin: 10px 5px;
+    font-size: 16px;
     color: #333;
-    font-weight:normal;
-    text-align:center;
+    font-weight: normal;
+    text-align: center;
 }
 
 h4 {
     margin: 20px 20px;
-
     font-size: 14px;
     color: #333;
-    font-weight:normal;
-    text-align:left;
+    font-weight: normal;
+    text-align: left;
 }
 
 html, body {
@@ -41,8 +41,8 @@ html, body {
     height: 100vh; /* Full viewport height */
 }
 
-.cat-corner{
-    font-size:30px;
+.cat-corner {
+    font-size: 30px;
 }
 
 #map {
@@ -52,14 +52,17 @@ html, body {
 
 #rightPanel {
     flex: 0 0 30%;
-    overflow-y:auto;
+    overflow-y: auto;
+    display: flex; /* Make right panel a flex container */
+    flex-direction: column; /* Stack children vertically */
 }
 
 #topRightPanel {
-    flex: 0 0 20%; /* Fixed height of 20% within the right panel */
+    flex: 0 0 auto; /* Prevent shrinking */
     padding: 10px;
     overflow: hidden;
 }
+
 #resultsPanel {
     flex: 1; /* Takes up remaining space in rightPanel */
     overflow-y: auto; /* Enables vertical scrolling within this section */
@@ -72,14 +75,70 @@ html, body {
 }
 
 .cat-image {
-    flex: 0 0 20%; /* Results panel takes up 20% of the width */
-    max-width: 50%; /* Make images responsive */
-    height: 50%; /* Maintain aspect ratio */
+    flex: 0 0 20%; /* Image takes up 20% of the width */
 }
 
-/* Emoji marker style */
-.emoji-marker {
-    font-size: 50px; /* Increase font size to make the emoji larger */
-    color: #ff6347; /* You can keep this color or adjust as needed */
-    text-align: center;
+/* Mobile styles */
+@media (max-width: 768px) {
+    h1 {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+    }
+    
+    h2 {
+        margin: 5px 5px;
+        font-size: 14px;
+        color: #333;
+        font-weight: bold; 
+        text-align: center;
+    }
+    
+    h3 {
+        margin: 5px 5px;
+        font-size: 12px;
+        color: #333;
+        font-weight: normal;
+        text-align: center;
+    }
+    
+    h4 {
+        margin: 5px 5px;
+        font-size: 12px;
+        color: #333;
+        font-weight: normal;
+        text-align: left;
+    }
+
+    #topRightPanel {
+        position: fixed; /* Fix the panel at the top */
+        top: 0; /* Align to the top of the screen */
+        left: 0%; /* Align it to the right of the map */
+        width: 100%; /* Width of the top panel */
+        z-index: 1000; /* Ensure it sits above other content */
+        background-color: white; /* Optional: Background color */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Shadow for visual separation */
+        overflow: auto; /* Allow scrolling if needed */
+    }
+
+    #resultsPanel {
+        position:fixed; /* Takes up remaining space in rightPanel */
+        overflow-y: auto; /* Enables vertical scrolling within this section */
+        padding: 10px;
+    }
+
+    #rightPanel {
+        position:fixed;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #map {
+        width: 100%; /* Map takes up 80% of the width */
+        height: 100%; /* Full height */
+    }
+
 }
