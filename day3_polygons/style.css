@@ -123,9 +123,10 @@ html, body {
     }
 
     #resultsPanel {
-        position:fixed; /* Takes up remaining space in rightPanel */
         overflow-y: auto; /* Enables vertical scrolling within this section */
-        padding: 10px;
+        padding: 5px;
+        height:5%;
+        position:bottom;
     }
 
     #rightPanel {
@@ -139,6 +140,11 @@ html, body {
     #map {
         width: 100%; /* Map takes up 80% of the width */
         height: 100%; /* Full height */
+    }
+
+    .cat-entry {
+        display: inline-block; /* Ensure cat entries are displayed in a row */
+        margin-right: 10px; /* Add spacing between entries */
     }
 
 }

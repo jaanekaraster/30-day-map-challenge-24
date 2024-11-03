@@ -31,8 +31,8 @@ d3.csv('cats_cleaned.csv').then(data => {
         const marker = L.circleMarker([lat, lon], {
             radius: 8,
             fillColor: "#AAFF00",
-            color: '#AAFF00',
-            weight: 1,
+            color: '#000000',
+            weight: 3,
             opacity: 1,
             fillOpacity: 1
         })
@@ -258,6 +258,29 @@ function enableBoundingBoxDragging() {
         }
     });
 }
+
+// Function to move the bounding box center to the tapped location
+function moveBoundingBoxCenter(e) {
+    const newCenter = e.latlng;
+    const offset = 0.002; // Offset to maintain bounding box size
+    // Update corners based on the new center
+    corners.nw.setLatLng([newCenter.lat + offset, newCenter.lng - offset]);
+    corners.ne.setLatLng([newCenter.lat + offset, newCenter.lng + offset]);
+    corners.se.setLatLng([newCenter.lat - offset, newCenter.lng + offset]);
+    corners.sw.setLatLng([newCenter.lat - offset, newCenter.lng - offset]);
+
+    // Update the bounding box
+    updateBoundingBox();
+}
+
+// Add click event listener to the map for mobile interaction
+const mobileThreshold = 768; // Define the mobile screen width threshold
+
+map.on('click', (e) => {
+    if (window.innerWidth <= mobileThreshold) {
+        moveBoundingBoxCenter(e); // Trigger only if the screen width is below the threshold
+    }
+});
 
 // Initial bounding box setup
 updateBoundingBox();
