@@ -163,6 +163,7 @@ html, body {
         align-items: center; /* Center items vertically */
         justify-content: space-between; /* Optional: space between items */
         background-color: white; /* Optional: Background color */
+        z-index:1000;
     }
     
     #rightPanel {
