@@ -41,16 +41,13 @@ d3.csv('cats_cleaned.csv').then(data => {
 
         // Add popup with specified information
         marker.bindPopup(`
+            <strong>Image:</strong> <img src="${d.image_url}" alt="Cat Image" style="width:100%; height:auto;"><br>
             <strong>ID:</strong> ${d.id}<br>
             <strong>Time Observed:</strong> ${new Date(d.time_observed_on).toUTCString()}<br>
             <strong>User:</strong> ${d.user_login}<br>
-            <strong>Image:</strong> <img src="${d.image_url}" alt="Cat Image" style="width:100%; height:auto;"><br>
-            <strong>Sound:</strong> <a href="${d.sound_url}" target="_blank">Listen</a><br>
             <strong>Description:</strong> ${d.description}<br>
             <strong>Certainty:</strong> ${d.certainty}<br>
             <strong>Place Guess:</strong> ${d.place_guess}<br>
-            <strong>Latitude:</strong> ${lat}<br>
-            <strong>Longitude:</strong> ${lon}
         `);
     });
         // Hide all markers on page load
