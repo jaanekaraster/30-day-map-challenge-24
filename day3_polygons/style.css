@@ -111,6 +111,17 @@ html, body {
         text-align: left;
     }
 
+    html, body {
+        height: 100%;
+        overflow: hidden; /* Prevent scrolling on the entire page */
+        font-family: Arial, sans-serif;
+    }
+
+    #container {
+        display: flex; /* Use flexbox for layout */
+        height: 100vh; /* Full viewport height */
+    }
+
     #topRightPanel {
         position: fixed; /* Fix the panel at the top */
         top: 0; /* Align to the top of the screen */
@@ -126,15 +137,45 @@ html, body {
         overflow-y: auto; /* Enables vertical scrolling within this section */
         padding: 5px;
         height:5%;
-        position:bottom;
+        display:flex;
+        align-items:center;
+        background-color: white; /* Optional: Background color */
+
     }
 
+    .cat-entry {
+        margin: 5px 5px;
+        flex: 0 0 60%; /* Takes 60% of the width */
+        max-width: 60%; /* Optional: ensures it doesn't exceed this width */
+        font-size: 10px; /* Set your desired font size here */
+
+    }
+
+    .cat-image {
+        margin: 5px 5px;
+        flex: 0 0 40%; /* Takes 40% of the width */
+        max-width: 30%; /* Optional: ensures it doesn't exceed this width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #catsList {
+        display: flex; /* Enable flexbox layout */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Optional: space between items */
+        background-color: white; /* Optional: Background color */
+    }
+    
     #rightPanel {
-        position:fixed;
-        top: 0;
-        left: 0%;
-        width: 100%;
-        z-index: 1000;
+        flex: 50% 0 0; /* Keep this if you still want flex properties for layout */
+        height: 25vh; /* Set height to 10% of the viewport height */
+        position: fixed; /* Fixes the panel's position */
+        bottom: 0; /* Anchors it to the bottom of the screen */
+        left: 0; /* Aligns it to the left side of the screen */
+        right: 0; /* Extends it to the right side, filling the width */
+        overflow-y: auto; /* Enables vertical scrolling if content overflows */
+        display: flex; /* Make right panel a flex container */
+        flex-direction: column; /* Stack children vertically */
+        z-index: 1000; /* Optional: Ensure it appears above other content */
     }
 
     #map {
@@ -142,9 +183,6 @@ html, body {
         height: 100%; /* Full height */
     }
 
-    .cat-entry {
-        display: inline-block; /* Ensure cat entries are displayed in a row */
-        margin-right: 10px; /* Add spacing between entries */
-    }
+    
 
 }
