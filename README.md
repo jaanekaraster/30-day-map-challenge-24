@@ -3,9 +3,9 @@ See the day folders for additional materials, like code, interactive maps and vi
 
 ### Challenge Themes
 
-| Day  | Date      | Theme             | Description | Link | 
+| Day  | Theme     | Topic             | Description | Link | 
 |------|------------|-------------------|-----------| ------ | 
-| 1    | 1-Nov-24   | **Points**        | A map with points. Show individual locations—anything from cities to trees. 📍 | [Map](https://jaanekaraster.github.io/30-day-map-challenge-24/day1_points/day1_points.html)
+| 1    | **Points**   | Fatalities in Ukraine Conflict, Jan-Nov 2024        | A map with points. Show individual locations—anything from cities to trees. 📍 | [Map](https://jaanekaraster.github.io/30-day-map-challenge-24/day1_points/day1_points.html)
 | 2    | 2-Nov-24   | **Lines**         | Focus on lines, such as roads, rivers, or borders, to represent connections and divisions. 📏 | [Map](https://jaanekaraster.github.io/30-day-map-challenge-24/day2_lines/index.html) |
 | 3    | 3-Nov-24   | **Polygons**      | Map with polygons, like regions, countries, or lakes, to define shapes that fill space. 🛑 | [Map](https://jaanekaraster.github.io/30-day-map-challenge-24/day3_polygons/index.html) |
 | 4    | 4-Nov-24   | **Hexagons**      | Use hexagonal grids to show density or spatial patterns. 🔷 | |
