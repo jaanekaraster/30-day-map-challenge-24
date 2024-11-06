@@ -154,7 +154,7 @@ Promise.all([
             icon: L.divIcon({
                 className: 'square-marker', // Custom class for the marker
                 html: '<div style="width: 10px; height: 10px; background-color: ' + rootStyles.getPropertyValue('--color-processingLocs').trim() + ';"></div>', 
-                iconSize: [10, 10] // Size of the square
+                iconSize: [15, 15] // Size of the square
             })
         }).addTo(map).bindPopup(popupContent);
     });
