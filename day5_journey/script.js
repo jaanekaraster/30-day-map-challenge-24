@@ -5,7 +5,7 @@
 
 const map = L.map('map', {
     zoomControl: false // Disable zoom controls
-}).setView([22.912584123496092, -21.889706377524313], 3);
+}).setView([22.912584123496092, -21.889706377524313], 2);
 
 // Add a tile layer to the map
 // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -626,7 +626,7 @@ function drawStep6toStep7Paths() {
 
     // Event listeners for each button
     document.getElementById('viewAll').addEventListener('click', function() {
-        resetMapView(22.912584123496092, -21.889706377524313,3); // Global view
+        resetMapView(22.912584123496092, -21.889706377524313,2); // Global view
         resetLayerColors();
         updatePaths();
     });
