@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.controls {
+    position: absolute; /* Position the controls absolutely */
+    top: 10px; /* Position it from the top */
+    left: 10px; /* Position it from the left */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for depth */
+    z-index: 1000; /* Ensure it’s above other elements */
+    width: 20%; /* Set a fixed width */
+}
+
+.pathControlForm
+/* Change font size of all spans inside .controls */
+.controls span {
+    font-size: 12px;  /* Adjust as needed */
+}
+
+.controls div span {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+/* CSS for the legend */
+.legend {
+    background: rgb(116, 116, 116);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.legend h4 {
+    margin: 0 0 5px;
+    font-size: 12px;
+}
+
+.drawPaths {
+    margin: 0 0 5px;
+}
+.control div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+#map {
+    height: 100vh; /* Ensure full height of the viewport */
+    width: 100%;   /* Ensure full width of the viewport */
+    position: relative; /* Make sure it's positioned correctly */
+}
+
+.source-line {
+    font-weight: bold; /* Makes the text bold */
+    margin-top: 10px;
+    font-size: 14px; /* Adjusted font size for smaller text */
+    margin-bottom: 5px;
+    color: #000000;     /* Grey color for source line */
+}
+
+.source-line div {
+    margin-bottom: 0px; /* Space between entries */
+}
+
+.source-line p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Adjust font size if needed */
+    font-weight: normal; /* Makes the text bold */
+}
+
+.disclaimer {
+    font-size: 10px; /* Adjust this value to make it smaller or larger */
+    line-height: 1.2em; /* Adjust line height for better readability */
+    margin-top: 10px; /* Adds a little space above the disclaimer */
+}
+
+h1 {
+    text-align: center;  /* Center the text in the h1 */
+    margin: 0;
+    padding: 5px 0;
+    font-size: 20px; /* Adjust header size */
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 20px; /* Adjust header size */
+}
+
+h4 {
+    margin: 5px; /* Remove default margin */
+    font-size: 16px;
+    text-align: center;
+}
+
+h5 {
+    margin: 5px; /* Remove default margin */
+    font-size: 14px;
+    text-align: center;
+}
+
+
+ul {
+    padding-left: 20px;
+}
+
+.supplier {
+    fill: #193ddc;
+}
+
+.mo {
+    fill: #671fab89;
+}
+
+:root {
+    --color-step1toStep2: #DA291C;
+    --color-step2toStep3: #FFD700;
+    --color-step3toStep4: #FFFFFF;
+    --color-step4toStep5: rgb(0, 168, 79);
+    --color-step5toStep6: #00a3da;
+    --color-step6toStep7: #9675B4;
+    --color-material: #DA291C;
+    --color-processing: #FFD700;
+    --color-supplier: #FFFFFF;
+    --color-processingLocs: rgb(0, 168, 79);
+    --color-distribution: #00a3da;
+    --color-retailMarkets: #9675B4;
+    --color-disposal: #c39737;
+    --color-inactive: #9e9e9e30;
+}
+.leaflet-popup-content p {
+    margin:0em 0;
+}
+.popupHeader {
+    font-size:18px;
+}
+.small-text {
+    font-size: smaller;
+}
+
+.controls-title {
+    display: flex;  /* Enable Flexbox layout */
+    flex-direction: column; /* Stack the image and heading vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 10%; /* Full viewport height (optional, for full centering) */
+}
+.small-image {
+    width: 100px;  /* Set width to 300px */
+    height: auto;  /* Automatically adjust the height to maintain the aspect ratio */
+}
+

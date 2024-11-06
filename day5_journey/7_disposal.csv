@@ -1,0 +1,6 @@
+﻿step_id,item_id,city,country,lat,lon,est_waste_volume_tonnes,est_amt_incineration,est_amt_landfill,est_amt_recovery,est_amt_reuse,est_amt_recycled,est_amt_treatment,est_pct_hazardous_incineration,est_pct_hazardous_landfill,est_pct_hazardous_recovery,est_pct_hazardous_reuse,est_pct_hazardous_recycled,est_pct_hazardous_treatment
+7,1,Billund,Denmark,55.7267378,9.1057218,4899.4,30,3.2,280,16.2,4914.8,41,0.98,0.25,0.230714,0.0,0.014365,0.458537
+7,2,Jiaxing,China,30.5687023,120.3261434,4899.4,30,3.2,280,16.2,4914.8,41,0.98,0.25,0.230714,0.0,0.014365,0.458537
+7,3,Kladno,Czechia,50.1196023,14.1200859,4899.4,30,3.2,280,16.2,4914.8,41,0.98,0.25,0.230714,0.0,0.014365,0.458537
+7,4,Monterrey,Mexico,25.7776273,-100.4905503,4899.4,30,3.2,280,16.2,4914.8,41,0.98,0.25,0.230714,0.0,0.014365,0.458537
+7,5,Nyiregyhaza,Hungary,47.9520671,21.60919554,4899.4,30,3.2,280,16.2,4914.8,41,0.98,0.25,0.230714,0.0,0.014365,0.458537

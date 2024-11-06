@@ -1,0 +1,108 @@
+﻿step_id,item_id,company,address,city,state,country,lat,lon,source,est_prevstep_item_id,est_nextstep_item_id
+3,1,A.M. RAMP & CO GMBH,"Lorsbacher Strasse 28, 65817 Eppstein/Taunus, Germany",Eppstein,,Germany,50.1332368,8.3996014,,3,4
+3,2,All4Labels  Mexico S.A. DE C.V,"Del. Azcapotzalco, #375, 02760 Cuidad de Mexico. Mexico",Mexico City,,Mexico,19.4847975,-99.1987183,,4,4
+3,3,AMB INDUSTRI AB,"Kvarnvagen 26, SE-361 53 Broakulla. Sweden",Broakulla,,Sweden,56.7036528,15.5402361,,3,5
+3,4,AMERICAN POLY DEL NORTE S.A DEC.V.,"Av. Stiva No. 261-A, Parque Industrial Barragan, San Nicolas de los Garza, Nuevo Leon, C.P. 66425. Mexico",San Nicolás de los Garza,Nuevo Leon,Mexico,25.7579722,-100.3143491,,4,4
+3,5,ARTIGRAF SA DE CV,"Carretera a Garcia Km. 1.2 interior 6, Santa Catarina, Nuevo Leon, Parque Industrial Gonher. Mexico","Santa Catarina, Nuevo León",Nuevo Leon,Mexico,25.7040317,-100.5241805,,3,4
+3,6,"Avient Colorants MX, S.A. de C.V","Plasticos No. 28, Santa Clara Coatitla, Ecatepec, Estado de Mexico, Mexico",Ecatepec de Morelos,Estado de Mexico,Mexico,19.5327672,-99.0651006,,4,4
+3,7,Avient Colorants,"No.88 Lane 4377 Jindu Road,Minhang District, Shanghai City. China",Shanghai,,China,31.0868346,121.4066551,,3,2
+3,8,Avient Colorants,"Pare Scientifique Fleming, Fond Jean Paques, 1, B-1348 Louvain-la- Neuve, Belgium",Louvain-la-Neuve,,Belgium,50.6619816,4.6366708,,4,5
+3,9,Avient Colorants,"Hohenrhein 1, D-56112 Lahnstein, Germany",Lahnstein,,Germany,50.3076464,7.6152114,,3,5
+3,10,Avient Colorants,"Kornkamp 50 , D-22926 Ahrensburg, Germany",Ahrensburg,,Germany,53.6923683,10.2531534,,4,5
+3,11,Avient Colorants,"Monread Industrial Estate, Naas, Co Kildare, Ireland",Naas,Kildare,Ireland,53.2392788,-6.6577258,,3,5
+3,12,Avient Colorants,"ul. Langiewicza 50, 95-050 Konstantynow Lodzki, Poland",Łódź,,Poland,51.741437,19.3499854,,4,5
+3,13,Avient Colorants,"Jatnyxegatan 7, Malmo, Sweden",Malmö,,Sweden,55.5632539,13.0346385,,3,5
+3,14,Balyfa Hungary Kft.,"H-2834 Tardos, Belterulet 7092/105, Hungary",Tardos,,Hungary,47.65783,18.46055,https://balyfa.com/european-supplier/,4,5
+3,15,Basell Sales & Marketing B.V.,"Av. CFE No. 730 Col. Zona Industrial c.p. 78395, San Luis Potosi, San Luis Potosi, Mexico",San Luis Potosí,San Luis Potosi,Mexico,22.0643126,-100.8832108,,3,4
+3,16,Basell Sales & Marketing B.V.,"No. 55-7, Sunshine Avenue, Changfu Street, Changshu City, Jiangsu Province, P.R. China",Changshu,Jiangsu,China,31.7780984,120.7558873,,4,2
+3,17,Basell Sales & Marketing B.V.,Bronsgatan 1 26539 Astorp. Sweden,Åstorp,,Sweden,56.1247069,12.9137087,,3,5
+3,18,BJORN THORSEN A/S,CBS-weg 2 6412 EZ Heerlen  KvK Limburg 14053919. The Netherlands,Limburg,,The Netherlands,50.8941667,5.9684698,,4,5
+3,19,Sonoco,"ul. Przemysłowa 1, 95-010 Sosnowiec-Pieńki, Poland, 95-010 Strykow. Poland",Stryków,,Poland,51.878466,19.5865229,,3,5
+3,20,Braskem BV International,"BR 386 - Rodovia Tabai/Canoas - Km 419, Via de  Contorno, 1216 - Polo Petroquimico, Triunfo, RSCEP: 95853-000 Brazil","Triunfo, Rio Grande do Sul",,Brazil,-29.8777082,-51.3917361,,4,4
+3,21,BROADWAY PRECISION (SHENZHEN) COMPANY,"Fu Rong Industrial Zone, Shajing Street, Bao An District, Shenzhen, China",Shenzhen,,China,22.7408734,113.8052194,,3,2
+3,22,Broadway Industries (Thailand) Co. Ltd.,"39/1 Moo5, Phaholyothin-Nongseange Rd., T. Nongyao, A. Muang, Saraburi 18000 Thailand",Saraburi province,,Thailand,14.4460226,100.8668228,,4,2
+3,23,CC Joint Printing Co.,"No. 3333 Caoying Road, Qingpu Industrial Zone, 201700 Shanghai, China",Shanghai,,China,31.234853,121.215529,,3,2
+3,24,CAJAS DE CARTON SULTANA S.A. DE C.V,"Reforma 105, 66350 Los Trevino, Santa Catarina, N.L. Mexico","Santa Catarina, Nuevo León",Nuevo Leon,Mexico,25.6700844,-100.4432607,,4,4
+3,25,CARTA MUNDI NORDIC AB,"Reforma 105, 66350 Los Trevino, Santa Catarina, N.L. Mexico","Santa Catarina, Nuevo León",Nuevo Leon,Mexico,25.6700844,-100.4432607,,3,4
+3,26,CARTOLITO,"Visbeekstraat  22, 2300 Turnhout. Belgium",Turnhout,,Belgium,51.30846465,4.914591539,,4,5
+3,27,CARTOLITO,"Adolfo Lopez Mateos #1409-A, Col. Constituyentes del 57, C.P.64260, Monterrey, Nuevo Leon, Mexico",Monterrey,Nuevo Leon,Mexico,25.7259242,-100.3299775,,3,4
+3,28,Celanese Sales Germany GmbH,"Rangel Frias #500 Col. Burocratas del  Estado, C.P. 64430, Monterrey. Mexico",Monterrey,Nuevo Leon,Mexico,25.7137831,-100.3667497,,4,4
+3,29,Celanese Sales Germany GmbH,"Industriepark Hochst / Rhein-Main, Bruningstrasse, D-65926, Frankfurt/Main-Hochst, Germany",Frankfurt,,Germany,50.0877295,8.5156385,,3,5
+3,30,CHI MEI CORPORATION,"Zona Industrial del Potosi, Taiwan",Zona Industrial del Potosi,,Taiwan,23.1016819,120.2538941,,4,2
+3,31,CHI MEI CORPORATION,"Sanjiazi 69-1, 71702 Taiwan City, Taiwan",Tai'an,,Taiwan,23.1016819,120.2538941,,3,2
+3,32,CODEC S.A.,"Codec SA CH-2056 Dombresson Codec SA CH-2056 Dombresson,  Switzerland",Dombresson,,Switzerland,47.0693864,6.9511543,,4,5
+3,33,CORRUGADOS DE BAJA CALIFORNIA,"Av. Dia del  Empresario 951 Col Jardines de Guadalupe, 67116 Guadalupe N.L. Mexico","Guadalupe, Nuevo León",Nuevo Leon,Mexico,25.6991742,-100.1801257,,3,4
+3,34,DAMGAARD-JENSEN A/S,Brendstrupgardsvej 29 DK-8200 Aarhus N. Denmark,Aarhus,,Denmark,56.18864,10.178947,,4,5
+3,35,DATAFIELD INDUSTRIES HONG KONG LTD,"3rd Floor, A plant building, Jin Long Road north Sidem Jin Chuan Industries Estate, Xie Gang Town, Dongguan, China",Dongguan,,China,23.0351776,113.7159119,,3,2
+3,36,DECOTECH A/S,"Mollevangsvej 10, DK-7560 Hjerm. Denmark",Hjerm,,Denmark,56.437763,8.642458,,4,5
+3,37,Drukpol. Flexo limited liability,"UI. Okunin 27, 05-100 Nowy Dwor, Mazowiecki. Poland",Nowy Dwór Mazowiecki,,Poland,52.4297686,20.7295168,,3,5
+3,38,DS Smith,"Perczel Mor ut.134; 2760 Nagykata, Hungary",Nagykáta,,Hungary,47.3985816,19.7609013,,4,5
+3,39,DS Smith,"Csokas u. 4; 9027, Gyor, Hungary",Győr,,Hungary,47.7011673,17.6741201,,3,5
+3,40,DS Smith,"Teplicka-109, CZ-407 01 Jilove u Decina, Czech Republic",Jílové,,Czech Republic,50.7640677,14.1099053,,4,3
+3,41,DS Smith,"Tovarni 424, 407 11 Decin-Boletice, Czech Republic",Decin-Boletice,,Czech Republic,50.73705155,14.18522411,,3,3
+3,42,DS Smith,"Husby Alle 8, DK-2630, Taastrup, Denmark",Taastrup,,Denmark,55.65926,12.295438,,4,5
+3,43,EASTMAN CHEMICAL BV,"301 S Wilcox Drive, Kingsport, 37660, Tennessee. USA","Kingsport, Tennessee",TN,USA,36.53337685,-82.54982794,,3,4
+3,44,ELIX POLYMERS  S.L.,"Poligono Industrial, 43110 La Dononja. Spain",La Dononja,,Spain,41.1059601,1.1662593,,4,5
+3,45,EMS-CHEMIE (UK) LTD.,"Warthweg 74, 64823 Gross-Umstadt, Germany",Groß-Umstadt,,Germany,49.8629341,8.9182741,,3,5
+3,46,GBOX,"FFCC Via a Tampico 7027, Col. Valle Soleado, Guadalupe, Nuevo Leon, Mexico, C.P. 67730 Mexico","Guadalupe, Nuevo León",Nuevo Leon,Mexico,25.6925711,-100.1610194,,4,4
+3,47,GJ COATING APS,"Aeblegyden 18, DK-5592 Ejby. Denmark",Ejby,,Denmark,55.46394,9.945081,,3,5
+3,48,GRAFOBAL A.S.,"Mazurova 2, 909 98 Skalice, Slovenska republika. Slovakia",Skalice,,Slovakia,48.8428846,17.2230476,,4,3
+3,49,GREAT CHINA PRODUCTS & PACKAGING,"Rm. 101, Tower 1, No. 33 Sanjiang Ind. Park, Hengli, Dongguan City, Guangdong Province, PRC",Dongguan,Guangdong,China,23.0447189,113.9601221,,3,2
+3,50,GREINER,"Parque Industrial 400, 66645 Monterrey, Mexico",Monterrey,,Mexico,25.7453068,-100.17277,,4,4
+3,51,GREINER,"Brezova 181, 76315 Slusovice, Czech Republic",Slušovice,,Czech Republic,49.2642358,17.799059,,3,3
+3,52,GREINER,"Plantowa 16; 05-825 Grodzisk Mazowiecki, Poland",Grodzisk Mazowiecki,,Poland,52.1188252,20.64662905,,4,5
+3,53,Hangzhou All for Labels Packaging,"1/F, Building 6, No. 1, Nangonghe Road, Hanzhou, China",Hangzhou,,China,30.4590846,120.2468451,,3,2
+3,54,HANS LAUTRUP CHEMICALS A/S,"Sankt Annce Plads 13, 1250 Copenhagen, Denmark",Copenhagen,,Denmark,55.6819069,12.5884136,,4,5
+3,55,HANS LAUTRUP CHEMICALS A/S,"Milleneweg 72, 6736 KW Sittard. The Netherlands",Sittard,,The Netherlands,51.0049095,5.8241812,,3,5
+3,56,Harman International Industries,"No. 11 Chong tian Road  Shipai Town Dongguan City, China",Dongguan,Guangdong,China,23.089239,113.9296702,,4,2
+3,57,Hexpol TPE AB,"Box 51, Gamla Ornasgatan 15, SE 662 22 Amal, Sweden",Amal,,Sweden,59.0473365,12.7194085,,3,5
+3,58,HN GROUP A/S,"Klovermarken 310, Billund. Denmark","Billund, Denmark",,Denmark,55.724132,9.125962,,4,5
+3,59,IDENTCO DE MEXICO S DE RL DE CV,"Bodega 1 Col. Moises Saenz, 66613 Nuevo Leon, Mexico",Nuevo León,Nuevo Leon,Mexico,25.8279855,-100.2673849,,3,4
+3,60,INEOS Styrolution Europe GmbH,Blvd. los Rios Km 7+880 cp  89600 ,"Altamira Municipality, Tamaulipas",Tamaulipas,Mexico,22.4197734,-97.8956832,,3,4
+3,61,INEOS Styrolution Europe GmbH,"Mainzer Landstrasse 50, 60325 Framkfurt am Main. Germany",Frankfurt,,Germany,50.1110638,8.6612385,,4,5
+3,62,Jabil Circui,"Block 7-3, No.2, Qihang Industrial Park, Haoxiang Road, Shajing, Baoan, Shenzhen City, China",Bao'an District,Shenzhen,China,23.1826024,113.2630388,,4,2
+3,63,JETTA CO. LTD.,"333 Cai Xin Lu,  Lan He Zhen, Nan Sha Qu, Lan He Zhen, Nan Sha Qu, Guangdong, China",Nan Sha Qu,Guangdong,China,22.8336886,113.3414589,,3,2
+3,64,Jiangyin Shenlong,"No,1999 Zhencheng Road Shengang Town, Jiangyin, Jiangsu, China",Jiangyin,Jiangsu,China,31.90137,120.0990311,,4,2
+3,65,KRAIBURG TPE GMBH & CO. KG,"FRIEDRICH-SCHMIDT STRASSE 2, 84478, WALDKRAIBURG.  Germany",Waldkraiburg,,Germany,48.2197885,12.4130514,,3,5
+3,66,LAURSEN GRAFISK A/S,"Handvaerkervej 6, DK-7190 Billund, Denmark","Billund, Denmark",,Denmark,55.631691,9.083262,,4,5
+3,67,LG CHEM EUROPE GMBH,"Alfred-Herrhausen Allee 3-5, 65760 Eschborn. Germany",Eschborn,,Germany,50.13339,8.5755253,,3,5
+3,68,LG CHEM EUROPE GMBH,"128 Yeoui-daero,  07336 Seoul, South Korea",Seoul,,South Korea,37.5279106,126.9292813,,4,2
+3,69,LIMO LABELS A/S,"Engvej 13, DK-8870 Stevnstrup, Denmark",Stevnstrup,,Denmark,56.432464,9.959259,,3,5
+3,70,Marabu Scandinavia AB,"Asperger Strasse 4, 71732 Tamm, Germany",Tamm,,Germany,48.9196204,9.128272925,,4,5
+3,71,"METROCOLOR DE MEXICO, S.A. DEC.V.","C.P. Rafael Sesma Huerta No. 17,  Parque Industrial Finsa, El Marques, Queretaro, Mexico, C.P. 76240, Mexico",El Marqués,Queretaro,Mexico,20.5628565,-100.2889941,,3,4
+3,72,Ming Shin Enterprises Limited,"No.6, Songbaidun Street, Qingxi Town, Dongguan City, Guangdong Province, China",Dongguan,Guangdong,China,22.8445744,114.1253609,,4,2
+3,73,MODEL OBALY A.S,"Tesinska 2675 / 102, Czech Republic",Tesinska,,Czech Republic,49.9278538,17.9335875,,3,3
+3,74,MODEL OBALY A.S,"K Letisti 2219, CZ-288 01 Nymburk, Czech Republic",Nymburk,,Czech Republic,50.1751669,15.0402066,,4,3
+3,75,Mondi Coating Zeltweg,"Bahnhofstrasse 3, 8740 Zeltweg, Austria",Zeltweg,,Austria,47.19175475,14.75953169,,3,5
+3,76,Mondi Coating Zeltweg,"Box 926, 701 30 Orebro, Sweden",Örebro,,Sweden,59.2680863,15.2429382,,4,5
+3,77,MORNING LIGHT INTELLIGENT PRINTING GROUP LTD.,"Pu Xin 3rd Road Industrial Zone, Shi Pai Town, Dongguan, Guangdong, China",Dongguan,Guangdong,China,23.089239,113.9296702,,3,2
+3,78,"MOTIVATING, S. DE R.L. DE C.V.","1624 lntermodal Pkwy. Haslet, Texas, 76052, USA","Haslet, Texas",TX,USA,32.9875969,-97.339587,,4,4
+3,79,"Avient S.a r.l., Hungary  Branch","Ward Industrial Estate Church Road, Lydney, Gloucestershire, United Kingdom",Lydney,Gloucestershire,UK,51.7124327,-2.5386001,,3,5
+3,80,POLYONE S.A R.L. Hungary,"Mandulafa Sor 3, H-9027 Gyor, Hungary",Győr,,Hungary,47.6799535,17.6926797,,4,5
+3,81,POLYPRINT A/S,"Reprovej 5, 8722 Hedensted, Denmark",Hedensted,,Denmark,55.777887,9.72091,,3,5
+3,82,PRIMO DANMARK A/S,"Jernbanegade 11, DK-6862 Tistrup, Denmark",Tistrup,,Denmark,55.713961,8.598723,,4,5
+3,83,PRIMO DANMARK A/S,"UI. Chemiczna 2, 44-240 Zory, Poland",Zory,,Poland,50.0516764,18.6675337,,4,5
+3,84,Pro-Flex S.A.,"Mickiewicza 17, 05-850 Ozarow Mazowiecki, Poland",Ożarów,,Poland,52.2069117,20.79282254,,4,5
+3,85,"Shanghai Donnelley Printing Co.,Ltd.","Alcaiceria #8, Zona Norte, Central de Abastos, C.P. 09040, lztapalapa, Mexico City, Mexico",Iztapalapa,Ciudad de Mexico,Mexico,19.3762278,-99.1002217,,3,4
+3,86,"Shanghai Donnelley Printing Co.,Ltd.","Av. Central No. 235, Zona Industrial Valle de Oro, San Juan del Rio, Queretaro, C.P. 76802, Mexico",San Juan del Río,Queretaro,Mexico,20.3967866,-99.988433,,4,4
+3,87,"Shanghai Donnelley Printing Co.,Ltd.","Av. Industrial Norte s/n Apartado postal 88730, Parque Industrial del Norte, Reynosa, Tamaulipas, Mexico",Reynosa,Tamaulipas,Mexico,26.0361194,-98.3303448,,3,4
+3,88,"Shanghai Donnelley Printing Co.,Ltd.","No. 7699 Songze Avenue, Qingpu Industrial Zone, 201707 Shanghai,  China",Shanghai,,China,31.1746958,120.8385372,,4,2
+3,89,S&K LABEL spol. s.r.o.,"Kigyohagyma utca 7, 4031 Debrecen, Hungary",Debrecen,,Hungary,47.5244266,21.5699416,,3,5
+3,90,S&K LABEL spol. s.r.o.,"Blanenska 1860, Kurim 664 34, Czech Republic",Kuřim,,Czech Republic,49.3108475,16.5416632,,4,3
+3,91,SABIC INNOVATIVE PLASTICS,"Plasticslaan #1, Bergen Op Zoom. Zip Code 4612, The Netherlands",Bergen op Zoom,,The Netherlands,51.5082001,4.2515248,,3,5
+3,92,SABIC INNOVATIVE PLASTICS,"One Lexan Lane, Mount Vernon, IN 47620, USA","Mount Vernon, Indiana",IN,USA,37.9086789,-87.939154,,4,4
+3,93,Sandvik Osprey,"Milland Road, SA11 1NJ, Neath, United Kingdom",Neath,,UK,51.6594733,-3.809803,,3,5
+3,94,Shanghai Foreign Trade Jielong,"No. 7075, Chuanzhou Road, Pudong New District, Shanghai City, China",Shanghai,,China,31.1747746,121.7038551,,4,2
+3,95,Shanghai Zidan Packaging,"No. 888 Beisong Highway, Minhang District, China",Shanghai,,China,31.0166453,121.3381134,,3,2
+3,96,"Shanghai Zijiang Color Printing & Packing Co., Ltd.","No.888 zhuanxing RD ,Minhang District, China",Shanghai,,China,31.0587979,121.3615143,,4,2
+3,97,SIIX SINGAPORE PTE LTD,"Park JI Beringen Lot 09 Batamindo Industrial park, Mukakuning, Batam, Indonesia 29433",Batam,,Indonesia,1.0682298,104.0225535,,3,2
+3,98,Singatron Electronic,"Building A3, No.17, FuZe Road, Gaoping Industrial Area, Sanjiao Town, Zhongshan City, Guangdong Province, China",Zhongshan,Guangdong,China,22.6936938,113.4430632,,4,2
+3,99,SLOVENSKA GRAFIA A.S.,"Pekna Cesta 6, 83403 Bratislava, Slovakia",Bratislava,,Slovakia,48.1986733,17.13710489,,3,3
+3,100,SONOCO POLAND,"ul. Przemuslowa 1, Sosnowiec Pienki, 95-010 Strykow, Poland",Stryków,,Poland,51.8816121,19.5847602,,4,5
+3,101,SP MOULDING A/S  - Stoholm,"Sondergade 71, 7840 Viborg, Denmark","Viborg, Denmark",,Denmark,56.47837,9.150165,,3,5
+3,102,"SUZHOU ADVANCE PRINTING CO., LTD","No. 5, Sheng Ai Road, Suzhou Industrial Park, China",Suzhou,Jiangsu,China,31.3490945,120.6606191,,4,2
+3,103,TRIOWORLD LANDSKRONA AB,"Strakenvagen 3, 56576 Bottnaryd, Sweden",Bottnaryd,,Sweden,57.7670594,13.8260645,,3,5
+3,104,TRIOWORLD LANDSKRONA AB,"Lodjursgatan 5, 261 23 Landskrona, Sweden",Landskrona,,Sweden,55.8849462,12.8481935,,4,5
+3,105,Dongguan Hungor Plastics Electronics Products Ltd,"15#, Xiasheng Road, Suzhou Industrial Park, Suzhou City, Jiangsu Province, China",Suzhou,Jiangsu,China,31.3196186,120.7680111,,3,2
+3,106,VIGOR PRECISION  LTD,"Huang Jia Bo Village, Shipai Town, Dongguan City, Guangdong Province, China",Dongguan,Guangdong,China,23.089584,113.939895,,4,2
+3,107,WING FUNG PRODUCTION CO. Ltd. ,"No. 3 Qingxi Yanhe Road, Qingxi, Dongguan, Guangdong, China",Dongguan,Guangdong,China,22.843744,114.164242,,3,2

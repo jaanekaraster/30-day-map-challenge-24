@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Supply Chain</title>
+    <script src="https://unpkg.com/d3@7"></script> <!-- Ensure you use a valid version -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Add defer to ensure script loads after HTML -->
+</head>
+<body>
+    <div class="controls">
+        <div class="controls-title">
+            <img src="512px-Red_lego_brick.png" alt="Lego image" class="small-image">
+            <h1>Follow the Lego Brick Road</h1>
+        </div>
+        <p>LEGO's iconic product has captured the instincts of play for the young and old. Explore the LEGO supply chain with this interactive map to understand where your LEGO sets come from and how LEGO is working to promote sustainability in their operations! </p>
+    
+    <form id="pathControlForm">
+        <h4>Step</h4>
+        <label>
+            <div>
+                <!-- <input type="radio" name="path" value="step1toStep2" checked> -->
+                <span style="background: var(--color-step1toStep2);"></span> Source Locations to Processing Centers
+            </div>
+        </label>
+        <label>
+            <div>
+            <!-- <input type="radio" name="path" value="step2toStep3"> -->
+            <span style="background: var(--color-step2toStep3);"></span> Processing Centers to Suppliers
+            </div> 
+        </label>
+        <label>
+            <div>
+                <!-- <input type="radio" name="path" value="step3toStep4"> -->
+                <span style="background: var(--color-step3toStep4);"></span> Suppliers to LEGO Production Facilities
+            </div>
+        </label>
+        <label>
+            <div>
+                <!-- <input type="radio" name="path" value="step4toStep5"> -->
+                <span style="background: var(--color-step4toStep5);"></span> LEGO Production Facilities to Distribution Centers
+            </div>
+        </label>
+        <label>
+            <div>
+                <!-- <input type="radio" name="path" value="step5toStep6"> -->
+                <span style="background: var(--color-step5toStep6);"></span> LEGO Distribution Centers to Retail Stores
+            </div>
+        </label>
+        <label>
+            <div>
+                <!-- <input type="radio" name="path" value="step6toStep7"> -->
+                <span style="background: var(--color-step6toStep7);"></span> Retail Stores to Disposal
+            </div>
+        </label>
+    </form>
+    <button id="viewAll">Global View</button>
+    <button id="viewAmericas">Focus: Americas</button>
+    <button id="viewEurope">Focus: Europe</button>
+    <button id="viewAsia">Focus: Asia</button>
+
+        <div class="source-line p">
+            <p>
+                Sources: <a href="https://www.lego.com/cdn/cs/sustainability/assets/blt032d7f4d14a4682d/The_LEGO_Group_Sustainability_Progress_Report_2023_Final.pdf" target="_blank">The LEGO Group 2023 Sustainability Progress Report</a>, <a href="https://www.lego.com/cdn/cs/sustainability/assets/blt2613d85f585ebce6/The_LEGO_Group_Supplier_List_-_2022.pdf" target="_blank">Supplier List (2022)</a>
+            </p>
+            <p>
+                Supplemented with open-source research. 
+            </p>
+        </div>
+        <div class="disclaimer">
+            <p>Disclaimer: This map was created for visualization purposes only and is not an official or definitive representation of LEGO's operations. The information provided may not be accurate or up to date, and is not intended for official use or decision-making. 
+            </p>
+        </div>
+
+        <h5>
+            By @jaanekaraster for Day 5: Journey, 30 Day Map Challenge 2024
+        <h5>
+    </div>
+
+    <div id="map" style="height: 100vh;"></div> <!-- Set map height to full viewport -->
+
+</body>
+</html>

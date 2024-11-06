@@ -1,0 +1,6 @@
+﻿step_id,item_id,region_name,lat,lon,est_nextstep_item_id
+6,1,Europe,48.0,20.0,1
+6,2,Middle East,30.0,45.0,4
+6,3,Africa,0.0,20.0,3
+6,4,Asia,34.0,100.0,5
+6,5,Americas,0.0,-60.0,2

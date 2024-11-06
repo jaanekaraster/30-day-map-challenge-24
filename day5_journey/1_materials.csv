@@ -1,0 +1,5 @@
+﻿step_id,item_id,country,description,lat,lon,est_nextstep_item_id
+1,1,Saudi Arabia,Sourcing of crude oil for plastic,23.8859,45.0792,1
+1,2,Kuwait,Sourcing of crude oil for plastic,29.3759,47.9774,2
+1,3,Malaysia,Sourcing of rubber,4.2105,101.9758,1
+1,4,Thailand,Sourcing of rubber,15.87,100.9925,2

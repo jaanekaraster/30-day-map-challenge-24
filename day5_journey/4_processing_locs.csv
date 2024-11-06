@@ -1,0 +1,9 @@
+﻿step_id,item_id,city,country,year_opened,employees,activity,lat,lon,est_water_m3_2023,est_heating_gwh_2023,est_gas_gwh_2023,est_electric_gwh_2023,est_nextstep_item_id
+4,1,Billund,Denmark,1932,700,Moulding,55.7267378,9.1057218,67000,1.8,12.18,73.46,2
+4,2,Jiaxing,China,2016,1200,Moulding,30.5687023,120.3261434,118000,1.8,12.18,73.46,6
+4,3,Kladno,Czechia,2000,4500,Processing & packing,50.1196023,14.1200859,60000,1.8,12.18,73.46,4
+4,4,Monterrey,Mexico,2009,3500,"Moulding, processing & packing",25.7776273,-100.4905503,383000,1.8,12.18,73.46,3
+4,5,Nyiregyhaza,Hungary,2014,3100,"Moulding, processing & packing",47.9520671,21.60919554,182000,1.8,12.18,73.46,4
+4,6,"Tan Uyen, Bình Dương",Vietnam,2024,4000,Moulding & packing,11.0716969,106.6770217,0,0,0,0,
+4,7,"Colonial Heights, VA",United States,2023,200,Packing,37.3081699,-77.3909737,0,0,0,0,
+4,8,"Chester, VA",United States,2027,1700,Manufacturing,37.3706303,-77.4203163,0,0,0,0,

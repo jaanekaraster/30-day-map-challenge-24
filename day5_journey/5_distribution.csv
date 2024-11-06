@@ -1,0 +1,7 @@
+﻿step_id,item_id,city,country,year_opened,employees,activity,lat,lon,est_office_hub_lbr_electricity_gwh
+5,1,Postbyen,Denmark,2027,1500,Hub,55.6798937,12.5827454,5
+5,2,Billund,Denmark,1932,5900,HQ,55.7320601,9.1153473,5
+5,3,"Enfield, CT",United States,1975,620,Hub,41.968685,-72.576898,5
+5,4,London,UK,2014,235,Hub,51.516848,-0.1107616,5
+5,5,Singapore,Singapore,2015,355,Hub,1.2956404,103.8538402,5
+5,6,Shanghai,China,2017,300,Hub,31.2069517,121.4362092,5
