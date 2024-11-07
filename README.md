@@ -10,7 +10,7 @@ See the day folders for additional materials, like code, interactive maps and vi
 | 3    | **Polygons**   | Map with polygons, like regions, countries, or lakes, to define shapes that fill space. 🛑      | [Kedi-koy Cat Scanner](https://jaanekaraster.github.io/30-day-map-challenge-24/day3_polygons/index.html) |
 | 4    | **Hexagons**  | Use hexagonal grids to show density or spatial patterns. 🔷      | [Voter Registrations in Massachusetts, USA](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/day4_hexagons.png)  |
 | 5    | **A journey**   | Map a journey, personal or otherwise, showing movement from one place to another. 🚶‍♂️✈️     | [Follow the LEGO Brick Road](https://jaanekaraster.github.io/30-day-map-challenge-24/day5_journey/index.html) |
-| 6    | **Raster**  | Use raster data, such as satellite imagery or heatmaps, to represent continuous surface data. 🟦🟧        | [Atul Setu Construction Timelapse, Mumbai, India](https://jaanekaraster.github.io/30-day-map-challenge-24/day6_raster/sentinel1_timelapse.gif)] |
+| 6    | **Raster**  | Use raster data, such as satellite imagery or heatmaps, to represent continuous surface data. 🟦🟧        | [Atul Setu Construction Timelapse, Mumbai, India](https://jaanekaraster.github.io/30-day-map-challenge-24/day6_raster/sentinel1_timelapse.gif) |
 | 7    | **Vintage style**  | Create a map with a vintage aesthetic, using classic elements to represent modern data. 🕰️🗺️ |  |
 | 8    | **HDX**  |  Use data from the Humanitarian Data Exchange to map humanitarian topics. 🌍🚑         |  |
 | 9    | **AI only**   | Use AI tools like DALL-E or ChatGPT to generate map-based visualizations. Explore prompt engineering for geospatial insights.      |  |
