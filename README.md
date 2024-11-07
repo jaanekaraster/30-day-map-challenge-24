@@ -1,5 +1,9 @@
 # 30 Day Map Challenge 2024
-See the day folders for additional materials, like code, interactive maps and videos, related to the day's challenge. 
+The 30 Day Map Challenge is an exciting opportunity to dive into the world of cartography, data visualization, and creative mapping! 
+
+Each day offers a new theme, hopefully sparking fresh ideas and pushing the boundaries of traditional mapping. 
+
+Whether it's mapping cities, visualizing movement, or experimenting with new data, every map tells a unique story. Completing all 30 days is an ambitious goal, but it’s all about the journey—discovering new techniques, learning from others, and exploring the many ways maps can reveal insights about our world. Check out my maps below--I'd love to hear from you!
 
 ### Challenge Themes
 
