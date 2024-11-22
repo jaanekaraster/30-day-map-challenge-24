@@ -30,7 +30,7 @@ Whether it's mapping cities, visualizing movement, or experimenting with new dat
 | 19   | **Typography**  | Focus on text and words, letting typography take the lead in your map design. ✍️🅰️    |  |
 | 20   | **OpenStreetMap** | Use OpenStreetMap data for a community-driven map project. 🗺️📍 |  |
 | 21   | **Conflict** | Map a conflict—political, territorial, or social. ⚔️🛑      |  |
-| 22   | **2 colours**  | Use only two colors to create a minimalist map design.     |  |
+| 22   | **2 colours**  | Use only two colors to create a minimalist map design.     | [Sequin World](https://jaanekaraster.github.io/30-day-map-challenge-24/day22_2colors/day22_1.jpg) |
 | 23   | **Memory**  |  Create a map from memory, such as a favorite place or hometown. 💭🗺️       |  |
 | 24   | **Only circular shapes** | Use only circular shapes in your map design. 🔵⭕ |  |
 | 25   | **Heat**  |  Map something related to heat, such as temperature or areas of high activity. 🔥🌡️         |  |
