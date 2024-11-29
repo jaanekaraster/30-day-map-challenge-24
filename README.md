@@ -23,7 +23,7 @@ Whether it's mapping cities, visualizing movement, or experimenting with new dat
 | 12   | **Time and space**  | Visualize change over time, such as urban growth or migration, to show time-geography relationships. ⏳🌍 |  |
 | 13   | **A new tool**  |  Try a new tool, software, or technique for mapping. 🧪🔧   |  |
 | 14   | **A world map**   | Map the whole world, showcasing continents, ecosystems, or oceans. 🌍 |  |
-| 15   | **My data**  |  Map personal data like places you’ve traveled or routines. 🗒️      |  |
+| 15   | **My data**  |  Map personal data like places you’ve traveled or routines. 🗒️      | [Cycling in Málaga](https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf) |
 | 16   | **Choropleth**  | Use a choropleth map to show data variation across regions. 🎨   |  |
 | 17   | **Collaborative Map**  | Collaborate with others on a single map project. 🤝🗺️  |  |
 | 18   | **3D**  | Add a third dimension, such as elevation or building heights, to the map. 🎢🏔️   |  |
