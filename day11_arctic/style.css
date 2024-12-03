@@ -48,6 +48,18 @@ h3 {
   pointer-events: none; /* Prevent the title from blocking map interactions */
 }
 
+h4 {
+  position: absolute;
+  top: 60%; /* Adjust as needed */
+  left: 8%;
+  transform: translate(0%,0%);
+  font-family: 'Calibri', sans-serif;
+  font-size: 1rem; /* Adjust size */
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
 #timeBox {
   position: absolute;
   top: 20%;
@@ -100,7 +112,7 @@ z-index: 10; /* Ensure it appears above the map */
   left: 40%;
   margin-right: 5%;
   font-size: 18px;
-  color: #0a7035;
+  color: #218C1CFF;
   z-index: 10; /* Ensure it appears above the map */
 }
 
@@ -153,12 +165,11 @@ z-index: 10; /* Ensure it appears above the map */
   }
 }
 
-/* Disclaimer text at the bottom */
-#disclaimer {
+/* Source text at the bottom */
+#source {
   position: fixed; /* Ensure it's positioned at the bottom of the window, below the buttons */
   left: 0;
   width: 100%; /* Full width */
-  background-color: #000000; /* Matching background color with the button bar */
   color: #ffffff;
   padding: 10px 0px 10px 0px;
   margin: 0px;
@@ -166,5 +177,12 @@ z-index: 10; /* Ensure it appears above the map */
   font-family: 'Calibri';
   text-align: center;
   bottom: 0vh; /* Positioning the disclaimer 10% of the window height from the bottom */
-  z-index: 999; /* Ensure it's just below the buttons */
+  z-index: 999; 
+}
+
+a{
+  color:rgb(255, 255, 255);
+}
+a:visited{
+  color:rgb(255, 255, 255);
 }
