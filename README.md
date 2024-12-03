@@ -19,7 +19,7 @@ Whether it's mapping cities, visualizing movement, or experimenting with new dat
 | 8    | **HDX**  |  Use data from the Humanitarian Data Exchange to map humanitarian topics. 🌍🚑         | [Reach of the Rupee](https://jaanekaraster.github.io/30-day-map-challenge-24/day8_hdx/day8_hdx.png)|
 | 9    | **AI only**   | Use AI tools like DALL-E or ChatGPT to generate map-based visualizations. Explore prompt engineering for geospatial insights.      |  [Promotional Poster for Wadi Shab, Oman](https://jaanekaraster.github.io/30-day-map-challenge-24/day9_ai/day9.png) <br>[▶ Process Video](https://jaanekaraster.github.io/30-day-map-challenge-24/day9_ai/day9.mp4)|
 | 10   | **Pen and Paper**  | Go analog and draw a map by hand. It’s all about the creative process. ✏️🗺️ |  |
-| 11   | **Arctic**  | Map the Arctic, focusing on ice coverage, wildlife, or climate effects. ❄️🧊        |  |
+| 11   | **Arctic**  | Map the Arctic, focusing on ice coverage, wildlife, or climate effects. ❄️🧊        | [Santa's Midnight Journey] |
 | 12   | **Time and space**  | Visualize change over time, such as urban growth or migration, to show time-geography relationships. ⏳🌍 |  |
 | 13   | **A new tool**  |  Try a new tool, software, or technique for mapping. 🧪🔧   |  |
 | 14   | **A world map**   | Map the whole world, showcasing continents, ecosystems, or oceans. 🌍 |  |

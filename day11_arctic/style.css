@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #070a2d;
+}
+
+/* Full screen for the globe */
+#globe {
+  width: 50%;
+  height: 400px; /* Adjust as needed */
+}
+
+ /* Styling for the headings and text */
+ h1 {
+  position: absolute;
+  top: 1%; /* Adjust as needed */
+  left: 8%;
+  transform: translate(5%,5%);
+  font-family: 'Calibri', sans-serif;
+  font-size: 2rem; /* Adjust size */
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+  /* Add glowing effect */
+  /* text-shadow: 0 0 10px rgb(255, 255, 255,1); */
+               /* 0 0 20px rgba(255, 255, 255, 0.9),
+               0 0 30px rgba(255, 255, 255, 0.4), */
+               /* 0 0 40px rgba(57, 224, 182, 0.7),
+               0 0 70px rgba(61, 211, 111, 0.6),
+               0 0 100px rgba(11, 156, 132, 0.5); */
+  z-index: 10; /* Ensure it appears above the map */
+  pointer-events: none; /* Prevent the title from blocking map interactions */
+}
+
+h3 {
+  position: absolute;
+  top: 10%; /* Adjust as needed */
+  left: 5%;
+  transform: translate(0%,0%);
+  font-family: 'Calibri', sans-serif;
+  font-size: 1rem; /* Adjust size */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  pointer-events: none; /* Prevent the title from blocking map interactions */
+}
+
+#timeBox {
+  position: absolute;
+  top: 20%;
+  height: 32%;
+  width: 30%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(135, 206, 235);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight:bold;
+  font-family:'Calibri';
+  z-index: 2000;
+}
+
+#utcTime {
+margin-top: 2%;
+top: 15%;
+font-size: 20px;
+font-family: 'Calibri', sans-serif;
+color: #ffffff;
+text-align:center;
+z-index: 10; /* Ensure it appears above the map */
+}
+
+#clock {
+  top: 3%;
+  transform: translate(0%,0%);
+  font-size: 16px;
+  font-family: 'Calibri', sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+  text-align:center;
+  z-index: 10; /* Ensure it appears above the map */
+  pointer-events: none; /* Prevent the title from blocking map interactions */
+}
+
+#arrivingAt {
+  position: absolute;
+  margin-top: 8%; /* Adjust as needed */
+  margin-left: 10%;
+  color: #ffffff;
+  z-index: 10; /* Ensure it appears above the map */
+}
+
+#arrivingAtPlace {
+  position: absolute;
+  margin-top: 8%; /* Adjust as needed */
+  left: 40%;
+  margin-right: 5%;
+  font-size: 18px;
+  color: #0a7035;
+  z-index: 10; /* Ensure it appears above the map */
+}
+
+#nextStop {
+  position: absolute;
+  margin-top: 24%; /* Adjust as needed */
+  margin-left: 10%;
+  color: #ffffff;
+  z-index: 10; /* Ensure it appears above the map */
+}
+
+#nextStopPlace {
+  margin-top: 24%; /* Adjust as needed */
+  margin-left: 40%;
+  margin-right: 5%;
+  font-size: 18px;
+  color: #b42b09;
+}
+
+/* Snowflake styling */
+#snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Snowflake animation */
+.snowflake {
+  position: absolute;
+  top: 0;  /* Start at the very top of the screen */
+  font-size: 1.5em;  /* size of the snowflakes */
+  color: #fff;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+/* Animation for falling */
+@keyframes fall {
+  0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.8;
+  }
+  100% {
+      transform: translateY(100vh) rotate(360deg); /* Fall to bottom */
+      opacity: 0.5;  /* Fade a bit as they fall */
+  }
+}
+
+/* Disclaimer text at the bottom */
+#disclaimer {
+  position: fixed; /* Ensure it's positioned at the bottom of the window, below the buttons */
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #000000; /* Matching background color with the button bar */
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: 'Calibri';
+  text-align: center;
+  bottom: 0vh; /* Positioning the disclaimer 10% of the window height from the bottom */
+  z-index: 999; /* Ensure it's just below the buttons */
+}

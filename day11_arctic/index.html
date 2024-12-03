@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Santa's Arctic Journey</title>
+  <!-- <script src="geotiff.min.js"></script>  
+  <script src="https://unpkg.com/geotiff@1.0.0-beta.1/dist/geotiff.bundle.min.js"></script> -->
+
+  <script src="https://unpkg.com/d3@7"></script> <!-- D3.js -->
+  <script src="https://unpkg.com/topojson@3"></script> <!-- TopoJSON -->
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="https://unpkg.com/geotiff.js"></script> -->
+</head>
+
+<body>
+  <h1>🎅 Santa's Midnight Journey</h1>
+  <h3>Follow Santa as he makes deliveries around the world at midnight in each timezone!</h3>
+  <div id="timeBox">
+    <div id="utcTime">Loading UTC time...</div>
+    <div id="clock"> 🕛 Current Time (UTC)</div>
+    <div id="arrivingAt">Arriving at</div>
+    <div id="arrivingAtPlace">Loading itinerary 1...</div>
+    <div id="nextStop">Next stop</div>
+    <div id="nextStopPlace">Loading next stop...</div>
+  </div>
+  <h4>By <a href="https://jaanekaraster.github.io/30-day-map-challenge-24/">@jaanekaraster</a> for 30 Day Map Challenge, Day 11: Arctic</h4>
+
+  <!-- <div id="contents">Calculating bag contents...</div> -->
+  <div id="snowflakes"></div>
+  <div id="source">
+    Sources: <a href="https://nsidc.org/data/data-programs/noaa-nsidc">NOAA National Snow and Ice Data Center</a> | <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/timezones/">Natural Earth</a>
+  </div> 
+  <div id="globe"></div>
+  <script src="script.js"></script>
+
+</body>
+</html>

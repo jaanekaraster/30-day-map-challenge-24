@@ -1,0 +1,8 @@
+/node_modules
+/package-lock.json
+/package.json
+/fonts
+/ignore
+/aurora-py
+/.env
+/__pycache__
