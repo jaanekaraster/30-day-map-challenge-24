@@ -297,7 +297,11 @@ Sources:
 ## Day 15: My Data
 **Cycling in Málaga**
 
-![day15 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf)
+<object data="https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 Located in the Costa del Sol region of southern Spain, Malaga is a fantastic place for cycling. It’s a leisurely 30-minute ride to Playa Pinon del Cuervo (Raven Rock), with numerous spots along the way that offer breathtaking views of the Mediterranean.
 
