@@ -100,7 +100,7 @@ In my interactive map, viewers can discover Istanbul's vibrant cat population us
 
 ## Day 4: Hexagons
 **📥 Voter Registrations in Massachusetts, USA**
-![day4 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/day4_hexagons.png/)
+![day4 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/day4_hexagons.png)
 
 With the US elections coming up, I thought I'd have an easy time finding voting locations for any state and doing some spatial analysis. Not so! At the local level, many states have PDFs with addresses of voting locations and drop boxes rather than a simple shapefile or CSV with lat-lon coordinates. It wouldn't have been worth my time for this challenge to individually geocode each one. 
 
@@ -111,19 +111,23 @@ The data cleaning process was relatively simple, only involving a join between t
 The next challenge was aggregating these observations into a state-shaped series of hexagons, again a task easier said than done. It turns out that this has been done at the [national level (50 states)](https://blog.apps.npr.org/2015/05/11/hex-tile-maps.html), but it's not something that can be done reliably in a programmatic fashion yet. 
 
 I checked out a bunch of tutorials as I was writing a Python script to generate this map including: 
-- https://observablehq.com/@gjmcn/tile-maps-us-counties
-- https://gist.github.com/smcateer/d810f397f39b4153f0a555d0363b488c
-- https://team.carto.com/u/andrew/tables/andrew.us_states_hexgrid/public/map
-- https://www.sirvizalot.com/2015/11/hex-tile-maps-in-tableau.html
-- https://d3-graph-gallery.com/graph/hexbinmap_geo_basic.html
-- https://andrewbatson.com/2015/07/07/bringing-the-wonders-of-the-hex-grid-tile-map-to-china/
+- [An Observable Notebook on tile maps](https://observablehq.com/@gjmcn/tile-maps-us-counties)
+- [A GitHub Gist](https://gist.github.com/smcateer/d810f397f39b4153f0a555d0363b488c)
+- [A Carto Map](https://team.carto.com/u/andrew/tables/andrew.us_states_hexgrid/public/map)
+- [A Tableau Attempt](https://www.sirvizalot.com/2015/11/hex-tile-maps-in-tableau.html)
+- [A D3 gallery](https://d3-graph-gallery.com/graph/hexbinmap_geo_basic.html)
+- [A Hexgrid tile blog post](https://andrewbatson.com/2015/07/07/bringing-the-wonders-of-the-hex-grid-tile-map-to-china/)
 
 I got the data on towns and computed the centroids in Python: 
+
 ![centroids](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/centroids.png/)
 
 Trying to get each town to snap to its neighbors was a huge challenge: 
+
 ![force1](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force1.png/)
+
 ![force2](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force2.png/)
+
 ![force3](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force3.png/)
 
 Eventually some kind of order took shape with the least amount of overlap: 
@@ -134,7 +138,9 @@ I also considered the connections topologically as a network.
 ![nodes](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/nodes.png/)
 
 I tried to develop a programmatic way to position the hexagons, to no avail. 
+
 ![test1](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/test1.png/)
+
 ![test2](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/test2.png/)
 
 I struggled for a long time until I found something I was vaguely happy with posting, and by then, it was Election Day. 
@@ -187,7 +193,7 @@ This was another simple map that, like the [Brahmaputra River GIF from last year
 
 It's easy to lie with maps (check out [last year's map on California](https://jaanekaraster.github.io/30-day-map-challenge-23/#day-11-retro) for a case study). And sometimes it's difficult to discern the line between truth and fiction, if the map is convincing enough. 
 
-That said, today's map was all about vintage. So I did a bit of research into Portuguese maritime history in the Indian Ocean. Here's what I found: 
+That said, today's map was all about vintage. So I did a bit of research into Portuguese maritime history in the Indian Ocean. Here's my summary:  
 
 Not many scholars are aware of a certain Fernando Lopes do Basseinha, a Portuguese cartographer who served on the voyage of Dom Francisco de Almeida in 1505. After landing at Cochin in India, Almeida ordered Basseinha to chart the western coastline in advance of a planned offensive against the Egyptian and Ottoman naval forces.
 
@@ -219,9 +225,9 @@ Some sources of inspiration:
 - [Tenochtitlan City Map, 1524](https://www.historytoday.com/archive/cartography/map-tenochtitlan-1524)
 - [Thomaz Luis Filipe F. R. The image of the Archipelago in Portuguese cartography of the 16th and early 17th centuries. In: Archipel, volume 49, 1995. pp. 79-124.](https://www.persee.fr/doc/arch_0044-8613_1995_num_49_1_3038)
 - [Alida C. Metcalf, "Who Cares Who Made the Map? La Carta del Cantino and its anonymous maker"](https://www.e-perimetron.org/Vol_12_1/Metcalf.pdf)
-- [Mumbai to Umargam](https://www.behance.net/gallery/125175567/Cartographic-Design?tracking_source=search_projects|mumbai+map&l=2)
+- [Mumbai to Umargam](https://www.behance.net/gallery/125175567/Cartographic-Design?tracking_source=search_projects%7Cmumbai+map&l=2)
 
-Made with Procreate.
+Made with Procreate; check out the process video below!
 
 <video width="640" height="360" controls loop="" muted = "" autoplay="">
   <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day7_vintage/day7_vintage.mp4" type="video/mp4">
@@ -229,7 +235,7 @@ Made with Procreate.
 </video>
 
 ## Day 8: HDX
-[Reach of the Rupee](https://jaanekaraster.github.io/30-day-map-challenge-24/day8_hdx/day8_hdx.png)
+![Reach of the Rupee](https://jaanekaraster.github.io/30-day-map-challenge-24/day8_hdx/day8_hdx.png)
 
 I promised myself that I would do something easy for this one because I was tired after Day 7’s pseudocartography exercise, but again this became a demonstration of something new. 
 
@@ -241,7 +247,8 @@ Of course, there are ways to deal with such large files, such as Fused or Tippec
 
 ## Day 9: AI Only
 **Promotional Poster for Wadi Shab, Oman**
-[Promotional Poster for Wadi Shab, Oman](https://jaanekaraster.github.io/30-day-map-challenge-24/day9_ai/day9.png)
+
+![Promotional Poster for Wadi Shab, Oman](https://jaanekaraster.github.io/30-day-map-challenge-24/day9_ai/day9.png)
 
 This exercise tested my prompt engineering techniques to get DALL-E to produce some nice promotional posters for Wadi Shab, Oman. 
 
