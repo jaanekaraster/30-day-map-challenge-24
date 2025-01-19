@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zelda: Overworld by @jaanekaraster</title>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+<script src="app.js"></script>
+<script type="module" src="app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cloudOverlay"></div>
+    <div id="map-container">
+        <!-- <div id="customCursor" class="custom-cursor"></div> -->
+
+        <div id="map">
+        </div>
+        
+        <div>
+            <h1 id="map-title">Zelda: Over-world</h1>
+            <h3 id="map-title-small">By @jaanekaraster for 30 Day Map Challenge 2024</h3><br>
+
+        </div>  
+
+        <div id="nav-buttons">
+            <ul id="buttons">
+                <li id="button-nav" class="nav">My Location <span class="subtitle">My Location</span></li>
+                <li id="button-castle" class="button">Hyrule Castle <span class="subtitle">Hyrule Castle</span></li>
+                <li id="button-hylia" class="button">Lake Hylia <span class="subtitle">Lake Hylia</span></li>
+                <li id="button-gerudo" class="button">Gerudo Valley <span class="subtitle">Gerudo Valley</span></li>
+                <li id="button-lon" class="button">Lon Lon Ranch <span class="subtitle">Lon Lon Ranch</span></li>
+                <li id="button-kokiri" class="button">Kokiri Forest <span class="subtitle">Kokiri Forest</span></li>
+                <li id="button-woods" class="button">Lost Woods <span class="subtitle">Lost Woods</span></li>
+                <li id="button-mountain" class="button">Death Mountain <span class="subtitle">Death Mountain</span></li>
+            </ul> 
+            <div id="time-temperature">
+                <div id="time">Loading time...</div>
+                <div id="time-label">Time</div>
+                <div id="temperature">Loading temperature...</div>
+                <div id="temp-label">Temperature</div>
+            </div>
+            <div id="mapControls">
+                <div id="currentMapButton" class="map-btn active" title="Custom Map">
+                    <div class="triforce">
+                        <div class="bottom-right"></div>
+                    </div>
+                </div>                
+                <div id="satelliteMapButton" class="map-btn" title="Satellite Map">🌍</div>
+            </div>
+            <div id="markerControls">
+                <!-- Clear Markers Button -->
+                <button id="clear-markers-button" class="clear-button">
+                    <span class="icon">&#10006;</span> Clear Markers
+                </button>
+                <ul id="markers">
+
+
+                </ul>
+
+            </div>
+            <div id="music-player">
+                <iframe id="spotify-embed" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            
+
+
+
+
+        </div>
+
+        <div id="disclaimer">
+            Disclaimer: The Legend of Zelda series is the intellectual property of Nintendo Co. Ltd. This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Nintendo Co. Ltd., or any of its subsidiaries.
+        </div> 
+    </div>
+  
+</body>
+</html>

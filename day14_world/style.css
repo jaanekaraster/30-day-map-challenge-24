@@ -1,0 +1,614 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+    /*cursor: none;  Keep hiding the default cursor */
+
+}
+
+/* * {
+    cursor: none;
+} */
+
+/* Set the size of the map */
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+#map-title {
+    position: absolute;
+    top: 1%; /* Adjust as needed */
+    left: 1%;
+    transform: translate(5%,5%);
+    font-family: 'HylianSerif', Arial, sans-serif;
+    font-size: 3rem; /* Adjust size */
+    color: rgb(156, 14, 14);
+    text-align: center;
+
+    /* Add glowing effect */
+    text-shadow: 0 0 10px rgb(255, 255, 255,1),
+                 0 0 20px rgba(255, 255, 255, 0.9),
+                 0 0 30px rgba(255, 255, 255, 0.4),
+                 0 0 40px rgba(57, 224, 182, 0.7),
+                 0 0 70px rgba(61, 211, 111, 0.6),
+                 0 0 100px rgba(11, 156, 132, 0.5);
+    z-index: 10; /* Ensure it appears above the map */
+    pointer-events: none; /* Prevent the title from blocking map interactions */
+}
+  
+#map-title-small {
+    position: absolute;
+    top: 1%; /* Adjust as needed */
+    left: 1%;
+    transform: translate(5%,5%);
+    font-family: 'verahumana95bold';
+    font-size: 1rem; /* Adjust size */
+    color: rgb(156, 14, 14);
+    text-align: center;
+
+    /* Add glowing effect */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                 0 0 20px rgba(255, 255, 255, 0.9),
+                 0 0 30px rgba(255, 255, 255, 0.9),
+                 0 0 40px rgba(255, 255, 255, 0.7),
+                 0 0 70px rgba(61, 211, 111, 0.6),
+                 0 0 100px rgba(11, 156, 132, 0.5);
+    z-index: 10; /* Ensure it appears above the map */
+    pointer-events: none; /* Prevent the title from blocking map interactions */
+}
+
+
+  #map-container {
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+}
+
+  /* Title styles */
+  #title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+@font-face {
+    font-family: 'HylianSerif';
+    src: url('./fonts/HyliaSerifBeta-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'verahumana95bold';
+    src: url('./fonts/verahumana95bold.ttf') format('woff2');
+}
+@font-face {
+    font-family: 'BotW_Sheikah';
+    src: url('./fonts/BotW_Sheikah.ttf') format('woff2'),
+    url('./fonts/BotW_Sheikah.ttf') format('truetype'),
+    url('./fonts/BotW_Sheikah.ttf') format('woff');
+}
+
+
+h1 {
+    font-family: 'HylianSerif', sans-serif;
+}
+
+h3 {
+    font-family: 'HylianSerif', sans-serif;
+    font-size:10px;
+}
+/* Disclaimer text at the bottom */
+#disclaimer {
+    position: fixed; /* Ensure it's positioned at the bottom of the window, below the buttons */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #000000; /* Matching background color with the button bar */
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    font-size: 10px;
+    text-align: center;
+    bottom: 0vh; /* Positioning the disclaimer 10% of the window height from the bottom */
+    z-index: 999; /* Ensure it's just below the buttons */
+}
+/* Style for the bottom bar */
+#buttons {
+    position: fixed;
+    bottom: 5vh;
+    left: 0;
+    width: 100%;
+    height: 10vh; /* 10% of the window's height for the buttons bar */
+    background-color: #000000; /* Bar color */
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure the bar stays on top */
+    font-family: 'verahumana95bold';
+
+}
+
+/* Style for the buttons */
+#buttons .button {
+    color: #87CEEB; /* Text color */
+    background-color: transparent; /* Transparent background initially */
+    border: 2px solid #87CEEB; /* Border color */
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */    
+}
+
+#buttons .nav {
+    color: #f1c40f; /* Text color */
+    background-color: transparent; /* Transparent background initially */
+    border: 2px solid #f1c40f; /* Border color */
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */    
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 9999; /* Ensure it appears above the map */
+}
+
+#buttons .nav .subtitle{
+    color: #d4ac0d; /* Yellow background on hover */
+}
+
+#buttons .nav:hover {
+    background-color: #d4ac0d; /* Yellow background on hover */
+    color: #000000;
+    box-shadow: 0 0 10px #87CEEB, 0 0 20px #ffffff;  /* Glowing effect for the border */
+}
+
+#buttons .nav:hover .subtitle{
+    color: #000000; /* Change text color to match the bar */
+}
+
+/* Button on hover */
+#buttons .button:hover {
+    background-color: #f1c40f; /* Yellow background on hover */
+    border: 2px solid #4e1b1b; /* Border color */
+    box-shadow: 0 0 10px #87CEEB, 0 0 20px #ffffff;  /* Glowing effect for the border */
+    color: #4e1b1b; /* Change text color to match the bar */
+}
+
+#buttons .button:hover .subtitle{
+    background-color: #f1c40f00; /* Yellow background on hover */
+    color: #4e1b1b; /* Change text color to match the bar */
+}
+
+
+/* Button on click */
+#buttons .button.active {
+    background-color: #87ceeb; /* Background when clicked */
+    color: #4e4b1b; /* Change text color */
+}
+
+#buttons .button.active .subtitle{
+    background-color: #87ceeb; /* Background when clicked */
+    color: #4e4b1b; /* Change text color */
+}
+
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes any padding that might be causing extra space */
+    margin: 0; /* Removes any margin */
+}
+
+li .nav {
+    display: block;
+    font-family: 'Cambria';
+    font-size: 1rem;
+    color: white;
+    margin-right: 10px;
+}
+
+li {
+    display: inline-block; /* Makes the list items inline (like buttons) */
+    margin-right: 10px; /* Optional: Add space between buttons */
+}
+
+li .subtitle {
+    display: block; /* Makes subtitle appear below the button text */
+    font-family: 'BotW_Sheikah'; /* Different font family */
+    font-size: 0.8em; /* Adjust the size of the subtitle */
+    color: #79bad6; /* Subtitle color */
+    margin-top: 5px; /* Adds space between the main text and subtitle */
+}
+
+#time-temperature {
+    position: fixed;
+    bottom: 10rem;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(135, 206, 235);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:bold;
+    font-family:'verahumana95bold';
+    z-index: 2000;
+}
+
+#time {
+    bottom: 15vh;
+    left: 5vh;
+    font-size: 20px;
+  }
+
+#temperature {
+    margin: 5px 0px 0px 0px;
+    bottom: 20vh;
+    left: 5vh;
+    font-size: 20px;
+}
+
+#time-label {
+    margin: 5px 0px 0px 0px;
+    font-family:'BotW_Sheikah'
+}
+
+#temp-label {
+    margin: 5px 0px 0px 0px; 
+    font-family:'BotW_Sheikah'
+}
+
+/* Custom square cursor */
+.custom-cursor {
+    position: absolute;
+    width: 40px;  /* Width of the square */
+    height: 40px;  /* Height of the square */
+    background-color: rgb(206, 162, 162, 0);  /* Transparent background */
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(0%, 0%);
+    transition: all 0.1s ease;
+}
+
+/* Expanded cursor style for a rectangle */
+.custom-cursor.expanded {
+    border-radius: 8px;
+    transition: width 0.2s ease, height 0.2s ease;
+
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* color: rgba(19, 233, 97, 0.8); */
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'verahumana95bold'
+    /* border: 1px solid #ccc; */
+}
+
+
+.custom-cursor {
+    --triangle-color: #87ceeb; /* Default triangle color */
+}
+
+/* Corner triangles */
+.custom-cursor::before,
+.custom-cursor::after,
+.custom-cursor .top-right,
+.custom-cursor .bottom-left {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Top-left triangle */
+.custom-cursor::before {
+    border-width: 10px;
+    border-color: transparent transparent transparent #87ceeb;
+    top: -10px;
+    left: -10px;
+    transform: rotate(-135deg); /* Rotate to face outward */
+    animation: glow 1s infinite alternate; /* Apply the glow animation */
+}
+
+/* Bottom-right triangle */
+.custom-cursor::after {
+    border-width: 10px;
+    border-color: transparent #87ceeb transparent transparent;
+    bottom: -10px;
+    right: -10px;
+    transform: rotate(-135deg); /* Rotate to face outward */
+    animation: glow 1s infinite alternate; /* Apply the glow animation */
+}
+
+/* Additional triangles for all four corners */
+.custom-cursor .top-right {
+    border-width: 10px;
+    border-color: transparent transparent transparent #87ceeb;
+    top: -10px;
+    right: -10px;
+    transform: rotate(-45deg); /* Rotate to face outward */
+    animation: glow 1s infinite alternate; /* Apply the glow animation */
+
+}
+
+.custom-cursor .bottom-left {
+    border-width: 10px;
+    border-color: transparent #87ceeb transparent transparent;
+    bottom: -10px;
+    left: -10px;
+    transform: rotate(-45deg); /* Rotate to face outward */
+    animation: glow 1s infinite alternate; /* Apply the glow animation */
+
+}
+
+/* Glowing effect using drop-shadow on the corner triangles */
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 2px #87ceeb) drop-shadow(0 0 2px #87ceeb) drop-shadow(0 0 2px #87ceeb);
+    }
+    
+}
+
+/* Change triangle colors dynamically using CSS variable */
+.custom-cursor.active::before {
+    border-color: transparent transparent transparent var(--triangle-color); /* Dynamic color */
+}
+
+.custom-cursor.active::after {
+    border-color: transparent var(--triangle-color) transparent transparent; /* Dynamic color */
+}
+
+.custom-cursor.active .top-right {
+    border-color: transparent transparent transparent var(--triangle-color); /* Dynamic color */
+}
+
+.custom-cursor.active .bottom-left {
+    border-color: transparent var(--triangle-color) transparent transparent; /* Dynamic color */
+}
+
+/* Glow animation for active state */
+.custom-cursor.active::before,
+.custom-cursor.active::after,
+.custom-cursor.active .top-right,
+.custom-cursor.active .bottom-left {
+    animation: glow-active 1s infinite alternate; /* New glow effect */
+}
+@keyframes glow-active {
+    0% {
+        filter: drop-shadow(0 0 4px var(--triangle-color)) drop-shadow(0 0 4px var(--triangle-color));
+    }
+    100% {
+        filter: drop-shadow(0 0 8px var(--triangle-color)) drop-shadow(0 0 8px var(--triangle-color));
+    }
+}
+
+
+#cloudOverlay {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url('./clouds.png') repeat; /* Replace with a seamless cloud texture */
+    background-size: cover;
+    background-repeat: repeat; /* Tiling the image */
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Allow interactions with the map below */
+    z-index: 999; /* Ensure it's above the map but below other UI elements */
+    transition: opacity 1.5s ease-in-out; /* Smooth fade-in/out */
+    animation: cloudDrift 10s linear infinite;
+}
+@keyframes cloudDrift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+/* MAP CONTROLS */
+#mapControls {
+    position: absolute;
+    bottom:40vh;
+    left: 2vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(135, 206, 235);
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:bold;
+    font-family:'verahumana95bold';
+    z-index: 2000;
+    display: flex;    
+}
+
+#mapControls .map-btn {
+    width: 50px;          /* Circular size */
+    height: 50px;
+    border-radius: 50%;   /* Make the button circular */
+    border: 2px solid #4e4b1b; /* Border color */
+    background-color: #585e5fc0; /* Button color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;      /* Icon size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Active button style */
+#mapControls .map-btn.active {
+    background-color: rgba(14, 57, 68, 0.678);
+    border-color: #87CEEB;
+    color: #4e4b1b;
+}
+
+/* Hover effect for non-active buttons */
+#mapControls .map-btn:not(.active):hover {
+    background-color: #f1c40f;
+    color: white;
+    border-color: #4e4b1b;
+    box-shadow: 0 0 10px #87CEEB, 0 0 20px #ffffff;  /* Glowing effect for the border */
+}
+
+
+/* Triforce Container */
+.triforce {
+    position: relative;
+    width: 1.5rem; /* Reduced size of the entire Triforce */
+    height: 1.2rem; /* Adjust height for aspect ratio */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-100%, -140%); /* Ensure proper centering */
+}
+
+/* Top Triangle */
+.triforce::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #FFD700; /* Gold color */
+}
+
+/* Bottom Left Triangle */
+.triforce::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #FFD700;
+}
+
+
+/* Bottom Right Triangle */
+.triforce .bottom-right {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #FFD700;
+}
+
+/* Hover/Selected State */
+.map-btn:not(.active):hover .triforce::before,
+.map-btn:focus .triforce::before {
+    border-bottom-color: #4e4b1b; /* Change to orange on hover/active */
+}
+
+.map-btn:not(.active):hover .triforce::after,
+.map-btn:focus .triforce::after {
+    border-bottom-color: #4e4b1b;
+}
+
+.map-btn:not(.active):hover .triforce .bottom-right,
+.map-btn:focus .triforce .bottom-right {
+    border-bottom-color: #4e4b1b;
+}
+
+#music-player {
+    position: absolute;
+    bottom: 18%; /* Moves 50% of the viewport height from the bottom */
+    left: 70%;  /* Moves 60% of the viewport width from the right */
+    width: 300px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Example background */
+    color: white; /* Text color */
+    padding: 10px; /* Padding for content inside */
+}
+
+/* Position the controls div and ensure it sits on top of the map */
+#markerControls {
+    position: fixed;
+    bottom: 30rem;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(135, 206, 235);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:bold;
+    font-family:'verahumana95bold';
+    z-index: 2000;
+}
+
+/* Button Container Styles */
+#markerControls .clear-button {
+    background-color: rgb(156, 14, 14);   /* Red background */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+    font-family:'verahumana95bold';
+}
+
+/* Hover Effect */
+#markerControls .clear-button:hover {
+    background-color: #d32f2f;   /* Darker red when hovered */
+    color: white;
+    box-shadow: 0 0 10px #87CEEB, 0 0 20px #ffffff;  /* Glowing effect for the border */
+
+}
+
+/* Icon Styling */
+#markerControls .clear-button .icon {
+    margin-right: 8px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+/* Optional: Styling for the button when active or pressed */
+#markerControls .clear-button:active {
+    background-color: #b71c1c;   /* Even darker red when pressed */
+}
+
+/* Responsive adjustments for the button */
+@media (max-width: 768px) {
+    #markerControls .clear-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
