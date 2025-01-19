@@ -1,4 +1,4 @@
-![header image](https://jaanekaraster.github.io/30-day-map-challenge-23/all_2024.png)
+![header image](https://jaanekaraster.github.io/30-day-map-challenge-24/all_2024.png)
 
 # 30 Day Map Challenge 2024
 The 30 Day Map Challenge is an exciting opportunity to dive into the world of cartography, data visualization, and creative mapping! 
