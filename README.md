@@ -120,28 +120,24 @@ I checked out a bunch of tutorials as I was writing a Python script to generate 
 
 I got the data on towns and computed the centroids in Python: 
 
-![centroids](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/centroids.png/)
+![centroids](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/centroids.png)
 
 Trying to get each town to snap to its neighbors was a huge challenge: 
 
-![force1](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force1.png/)
-
-![force2](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force2.png/)
-
-![force3](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force3.png/)
+![force1](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force1.png)
+![force2](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force2.png)
+![force3](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force3.png)
 
 Eventually some kind of order took shape with the least amount of overlap: 
-
-![force4](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force4.png/)
+![force4](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/force4.png)
 
 I also considered the connections topologically as a network. 
-![nodes](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/nodes.png/)
+![nodes](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/nodes.png)
 
 I tried to develop a programmatic way to position the hexagons, to no avail. 
 
-![test1](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/test1.png/)
-
-![test2](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/test2.png/)
+![test1](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/test1.png)
+![test2](https://jaanekaraster.github.io/30-day-map-challenge-24/day4_hexagons/test2.png)
 
 I struggled for a long time until I found something I was vaguely happy with posting, and by then, it was Election Day. 
 
