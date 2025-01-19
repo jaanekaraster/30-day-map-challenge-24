@@ -14,6 +14,7 @@ Check out my maps below--I'd love to [hear from you](https://www.jacobkohn.dev/)
 ### Challenge Themes
 
 #### Completed Maps
+
 | Day  | Theme     | Description             | Topic |
 |------|------------|-------------------|-----------|
 | 1    | **Points**   | A map with points. Show individual locations—anything from cities to trees. 📍        | [Fatalities in Ukraine Conflict, Jan-Nov 2024](https://jaanekaraster.github.io/30-day-map-challenge-24/day1_points/day1_points.html) |
