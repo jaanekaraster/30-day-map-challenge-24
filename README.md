@@ -27,7 +27,7 @@ Check out my maps below--I'd love to [hear from you](https://www.jacobkohn.dev/)
 | 9    | **AI only**   | Use AI tools like DALL-E or ChatGPT to generate map-based visualizations. Explore prompt engineering for geospatial insights.      |  [Promotional Poster for Wadi Shab, Oman](https://jaanekaraster.github.io/30-day-map-challenge-24/day9_ai/day9.png) <br>[▶ Process Video](https://jaanekaraster.github.io/30-day-map-challenge-24/day9_ai/day9.mp4)|
 | 11   | **Arctic**  | Map the Arctic, focusing on ice coverage, wildlife, or climate effects. ❄️🧊        | [Santa's Midnight Journey](https://jaanekaraster.github.io/30-day-map-challenge-24/day11_arctic/index.html) |
 | 15   | **My data**  |  Map personal data like places you’ve traveled or routines. 🗒️      | [Cycling in Málaga](https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf) |
-| 22   | **2 colours**  | Use only two colors to create a minimalist map design.     | [Sequin World](https://jaanekaraster.github.io/30-day-map-challenge-24/day22_2colors/day22_1.jpg) |
+| 22   | **2 colours**  | Use only two colors to create a minimalist map design.     | [Sequin World](https://jaanekaraster.github.io/30-day-map-challenge-24/day22_2colors/day22_1.jpg) | |
 
 #### Future Projects
 I had some ideas for these, but didn't manage to complete something within the 30 days. Stay tuned for updates over the next year. 
@@ -233,6 +233,8 @@ Made with Procreate; check out the process video below!
 ## Day 8: HDX
 ![Reach of the Rupee](https://jaanekaraster.github.io/30-day-map-challenge-24/day8_hdx/day8_hdx.png)
 
+Ever wondered how accessible cash is across India? These maps give us a detailed look at financial access and the demand on each ATM across India’s cities.
+
 I promised myself that I would do something easy for this one because I was tired after Day 7’s pseudocartography exercise, but again this became a demonstration of something new. 
 
 Browsing through the data on HDX, I looked for something fairly straightforward in a geography I was familiar with. I settled on ATM data in India, and had the idea to visualize accessibility to cash throughout the country. But this couldn’t be just a simple points-on-a-map effort, no. It would be cooler to normalize the data by population to get a more accurate and granular picture of accessibility in each area. This means: Kontur population data! 
@@ -240,6 +242,8 @@ Browsing through the data on HDX, I looked for something fairly straightforward 
 So I brought the Kontur and ATM data into QGIS and performed a simple field calculation to add a calculated column. But as you know, Kontur is a massive data file, particularly for a country with a large area like India. So exporting the result as a GeoJSON meant that I now had a very troublesome file taking up over 1 million KB of storage. With great power comes great responsibility to my computer’s health…
 
 Of course, there are ways to deal with such large files, such as Fused or Tippecanoe. I tried these out, but ended up styling and exporting the map from QGIS. Onward!
+
+Data from Humanitarian Data Exchange, Kontur population H3 hexagons + OSM export of financial service points in India (focusing on ATMs)
 
 ## Day 9: AI Only
 **Promotional Poster for Wadi Shab, Oman**
@@ -255,7 +259,15 @@ This exercise tested my prompt engineering techniques to get DALL-E to produce s
 
 This one was fairly straightforward: Getting a sense of DALL-E’s capabilities in design and mapping. 
 
-A promotional poster for Wadi Shab, Oman.
+For AI tools, it's always about context. So I got a raster image from Landsat9--by simply loading up Google Earth Engine and Geemap, and selecting the area using a bounding box. After that, I made a few color corrections in QGIS, then uploaded the image to DALL-E with instructions. 
+
+Some learnings: 
+👉 Image attachments can provide helpful context.
+👉 ChatGPT gets the assignment right, but often fails when producing a final product. Multiple rounds of edits are required. (I would not hire ChatGPT as an intern in this case.)
+👉 Sometimes ChatGPT gets stuck on certain ideas and more careful prompting is needed to steer it in the direction you want.
+👉 ChatGPT has a lot of trouble understanding national flags and how to write accurate text, in English or Arabic.
+(Skip to the end of the video for the results!)
+P.S. See if you can spot the double-headed camel 🐪 
 
 ## Day 11: Arctic
 **🎅 Santa's Midnight Journey🕛**
@@ -277,8 +289,14 @@ The result was a bit laggy, but with the addition of some snowflake animations, 
 
 [Check out the map!](https://jaanekaraster.github.io/30-day-map-challenge-24/day11_arctic/index.html)
 
+Sources: 
+- Arctic Ice Extent (24 Dec 2023) - [NOAA: National Oceanic & Atmospheric Administration National Snow and Ice Data Center (NSIDC)](https://nsidc.org/data/search#keywords=arctic+sea+ice/sortKeys=score,,desc/facetFilters=%257B%2522facet_format%2522%253A%255B%2522GeoTIFF%2522%255D%252C%2522facet_temporal_duration%2522%253A%255B%25221%252B%2520years%2522%255D%257D/pageNumber=1/itemsPerPage=25), 
+- [NSIDC Sea Ice Analysis Tool](https://nsidc.org/sea-ice-today/sea-ice-tools/sea-ice-analysis-tool)
+- [NaturalEarth time zones](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/timezones/)
+
 ## Day 15: My Data
 **Cycling in Málaga**
+
 ![day15 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf)
 
 Located in the Costa del Sol region of southern Spain, Malaga is a fantastic place for cycling. It’s a leisurely 30-minute ride to Playa Pinon del Cuervo (Raven Rock), with numerous spots along the way that offer breathtaking views of the Mediterranean.
@@ -287,10 +305,13 @@ This map was a good reminder of how to use QGIS' Print Composer effectively for 
 
 ## Day 22: 2 Colours
 **Sequin World**
+
 ![day22 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day22_2colors/day22_1.jpg)
 
 You may have seen those pillows or dresses which have sequins with a dull color on one side and a shiny color on the other. I hadn't seen these before, so I thought there was some serious level of decay going on with the pillows on this couch. Then I realized this could be a great medium for a simple 2-colour world map. 
 
 ## Conclusions
 
-This year's map challenge was pretty ambitious as I wanted to make 1 interactive web map per day. It was a strong start that ended with a lot of leftover ideas and project drift, but with some great foundational learnings as I continue building skills. I got more familiar with the HTML/CSS/JS way of making maps and relying more on open source data and workflows to minimize dependencies on proprietary solutions. Probably my favorite maps were the LEGO supply chain and the Cat Scanner. I welcome your feedback! 
+This year's map challenge was pretty ambitious as I wanted to make 1 interactive web map per day. It was a strong start that ended with a lot of leftover ideas and project drift, but with some great foundational learnings as I continue building skills. I got more familiar with the HTML/CSS/JS way of making maps and relying more on open source data and workflows to minimize dependencies on proprietary solutions. Probably my favorite maps were the LEGO supply chain, vintage map, and the Cat Scanner. 
+
+I welcome your [feedback](https://www.jacobkohn.dev/)! 
