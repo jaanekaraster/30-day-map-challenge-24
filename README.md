@@ -1,3 +1,5 @@
+![header image](https://jaanekaraster.github.io/30-day-map-challenge-23/all_2024.png)
+
 # 30 Day Map Challenge 2024
 The 30 Day Map Challenge is an exciting opportunity to dive into the world of cartography, data visualization, and creative mapping! 
 
@@ -249,7 +251,7 @@ Data from Humanitarian Data Exchange, Kontur population H3 hexagons + OSM export
 ## Day 9: AI Only
 **Promotional Poster for Wadi Shab, Oman**
 
-![Promotional Poster for Wadi Shab, Oman](https://jaanekaraster.github.io/30-day-map-challenge-24/day9_ai/day9.png)
+![day9 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day9_ai/day9.png)
 
 This exercise tested my prompt engineering techniques to get DALL-E to produce some nice promotional posters for Wadi Shab, Oman. 
 
@@ -298,11 +300,7 @@ Sources:
 ## Day 15: My Data
 **Cycling in Málaga**
 
-<object data="https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![day15 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day15_mydata/day15.png)
 
 Located in the Costa del Sol region of southern Spain, Malaga is a fantastic place for cycling. It’s a leisurely 30-minute ride to Playa Pinon del Cuervo (Raven Rock), with numerous spots along the way that offer breathtaking views of the Mediterranean.
 
