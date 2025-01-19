@@ -79,13 +79,14 @@ This map helps viewers explore data on US seafood imports and the percentage sou
 This was my first published interactive web map for a 30-day map challenge topic, using HTML, CSS and JS to gather and visualize the data on a Leaflet map. 
 
 Data from [US International Trade Commission](https://www.usitc.gov/data/index.htm#:~:text=Open%20data%20refers%20to%20publicly,for%20innovation%20and%20economic%20growth.) and [FAO](https://www.marineregions.org/downloads.php)
+
 Want to learn more about US seafood imports? [Read the report.](https://www.usitc.gov/publications/332/pub5168.pdf)
 
 ## Day 3: Polygons
 **😺Kedi-koy Kitties😺**
 
 <video width="640" height="360" controls loop="" muted = "" autoplay="">
-  <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day3_polygons/day3_polygons.mp4" type="video/mp4">
+  <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day3_polygons/day3_video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
