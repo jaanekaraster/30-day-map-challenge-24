@@ -56,13 +56,31 @@ I had some ideas for these, but didn't manage to complete something within the 3
 | 29   | **Overture**  | Use data from the Overture Maps Foundation to showcase new open geospatial datasets. 🌍📊      |  |
 | 30   | **The final map** | End the challenge with a map of your choice, showcasing your creativity and growth. 🎉🌐 | |
 
+<style>
+  .responsive-video {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio (16:9) */
+    height: 0;
+    overflow: hidden;
+  }
+  .responsive-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
 ## Day 1: Points
 **Mapping air/artillery strikes in the Ukraine conflict, Jan - Nov 2024**
 
-<video width="640" height="360" controls loop="" muted = "" autoplay="">
-  <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day1_points/day1_points.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="responsive-video">
+  <video controls loop muted autoplay>
+    <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day1_points/day1_points.mp4" type="video/mp4"> 
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 I started off this year's challenge with a topical map of fatalities in the conflict in Ukraine. I got the data from ACLED's well-curated data set on current and historical conflicts, and visualized it in Kepler, a platform that helps cartographers visualize data, particularly for time series. 
 
