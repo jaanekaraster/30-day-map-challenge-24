@@ -106,10 +106,12 @@ Want to learn more about US seafood imports? [Read the report.](https://www.usit
 ## Day 3: Polygons
 **😺Kedi-koy Kitties😺**
 
-<video width="640" height="360" controls loop="" muted = "" autoplay="">
-  <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day3_polygons/day3_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="responsive-video">
+  <video controls loop muted autoplay>
+    <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day3_polygons/day3_video.mp4" type="video/mp4"> 
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 I decided to make today's challenge about cats, a topic which is always Internet-worthy. 
 
@@ -168,10 +170,13 @@ Data from Massachusetts Secretary of State Voter Enrollment Count (August 2024) 
 ## Day 5: A Journey
 **Follow the LEGO Brick Road**
 
-<video width="640" height="360" controls loop="" muted = "" autoplay="">
-  <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day5_journey/day5_journey.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="responsive-video">
+  <video controls loop muted autoplay>
+    <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day5_journey/day5_journey.mp4" type="video/mp4"> 
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 
 The [LEGO Group's](https://www.lego.com/en-us) iconic bricks have sparked play and creativity for the young and old. But where are these bricks made, and what's their journey from raw materials cached under the Middle East to your bookshelf? 
 
@@ -246,10 +251,12 @@ Some sources of inspiration:
 
 Made with Procreate; check out the process video below!
 
-<video width="640" height="360" controls loop="" muted = "" autoplay="">
-  <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day7_vintage/day7_vintage.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="responsive-video">
+  <video controls loop muted autoplay>
+    <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day7_vintage/day7_vintage.mp4" type="video/mp4"> 
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## Day 8: HDX
 ![Reach of the Rupee](https://jaanekaraster.github.io/30-day-map-challenge-24/day8_hdx/day8_hdx.png)
@@ -273,10 +280,12 @@ Data from Humanitarian Data Exchange, Kontur population H3 hexagons + OSM export
 
 This exercise tested my prompt engineering techniques to get DALL-E to produce some nice promotional posters for Wadi Shab, Oman. 
 
-<video width="640" height="360" controls loop="" muted = "" autoplay="">
-  <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day9_ai/day9.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="responsive-video">
+  <video controls loop muted autoplay>
+    <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day9_ai/day9.mp4" type="video/mp4"> 
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 This one was fairly straightforward: Getting a sense of DALL-E’s capabilities in design and mapping. 
 
@@ -293,10 +302,12 @@ P.S. See if you can spot the double-headed camel 🐪
 ## Day 11: Arctic
 **🎅 Santa's Midnight Journey🕛**
 
-<video width="640" height="360" controls loop="" muted = "" autoplay="">
-  <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day11_arctic/day11.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="responsive-video">
+  <video controls loop muted autoplay>
+    <source src="https://github.com/jaanekaraster/30-day-map-challenge-24/raw/refs/heads/main/day11_arctic/day11.mp4" type="video/mp4"> 
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 For this day, I wanted to see how I could incorporate time zone data with a fun topic, Santa's delivery schedule. Namely, how does he manage his busy delivery schedule with Earth's time zones, and make his deliveries at exactly midnight in each home? 
 
