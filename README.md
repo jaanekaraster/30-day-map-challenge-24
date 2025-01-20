@@ -338,7 +338,7 @@ This map was a good reminder of how to use QGIS' Print Composer effectively for 
 ## Day 22: 2 Colours
 **Sequin World**
 
-![day22 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day22_2colors/day22_1.jpg)
+![day22 image](https://jaanekaraster.github.io/30-day-map-challenge-24/day22_2colors/day22_2.jpg)
 
 You may have seen those pillows or dresses which have sequins with a dull color on one side and a shiny color on the other. I hadn't seen these before, so I thought there was some serious level of decay going on with the pillows on this couch. Then I realized this could be a great medium for a simple 2-colour world map. 
 
