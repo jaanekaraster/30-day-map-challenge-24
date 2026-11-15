@@ -14,9 +14,8 @@ const map = L.map('map', {
 // }).addTo(map);
 
 // Add Carto Positron tile layer
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    maxZoom: 19,
-    attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
+L.maplibreGL({
+    style: 'https://tiles.openfreemap.org/styles/dark'
 }).addTo(map);
 
 // SVG overlay for D3 elements
