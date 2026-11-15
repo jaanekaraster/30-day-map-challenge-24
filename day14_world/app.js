@@ -3,7 +3,7 @@
 // Access token for your Mapbox API key
 //const mapboxToken = process.env.MAPBOX_API_KEY;
 //const mapboxStyleUrl = process.env.MAPBOX_STYLE_URL;
-mapboxToken = 'pk.eyJ1IjoiamFhbmVrYS1yYXN0ZXIiLCJhIjoiY20zdDN3bTllMDUwZjJrcjAyaGg4NWpoYSJ9.tnQGSL1nwQuqyPPezqNaSg'
+mapboxToken = 'pk.eyJ1IjoiamFhbmVrYS1yYXN0ZXIiLCJhIjoiY213aTVuY3EwMGEwcDJ6cTQyd3hlN3V5cSJ9.Iy8jSrkd5oTh29MF7uSEKw'
 mapboxStyleUrl = 'mapbox://styles/jaaneka-raster/cm3t3yvur002n01qu3ojc7cz4'
 const satelliteStyleUrl = 'mapbox://styles/mapbox/satellite-v9'; // Satellite style URL
 
